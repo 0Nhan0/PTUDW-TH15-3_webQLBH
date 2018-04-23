@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="15">
+    <link rel="icon" type="image/ico" href="image/home.png" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/login.css">
+    <script type="text/javascript" src="assets/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+    function check() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == "admin") {
+            if (password == "123")
+                window.location = "./admin.html";
+        }
+        if (username == "member") {
+            if (password == "123")
+                window.location = "./member.html"
+        }
+    }
+    </script>
+</head>
+
+<body style="background-color: #f0f0f0">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" style="background-color: #469df4">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header col-md-2 col-xs-12">
+                <a class="navbar-brand" style="color: white;text-align: center; display: block;" href="#"><span>Trang chủ</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 col-md-8 col-xs-12">
+                <form class="navbar-form navbar-left col-md-3 col-xs-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tìm sản phẩm mong muốn...">
+                    </div>
+                    <button type="submit" class="btn btn-default">Tìm kiếm</button>
+                </form>
+                <ul class="nav navbar-nav col-md-4 col-xs-6">
+                    <li><a href="#" style="color: white"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Theo dõi đơn hàng</span></span></a></li>
+                    <li><a href="#" style="color: white"><span class="glyphicon glyphicon-bell" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Thông báo của bạn</span></span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right col-md-2">
+                    <li>
+                        <a class="login-window" href="#login-box" style="color: white">Đăng nhập/Đăng ký</a>
+                        <div class="login" id="login-box">Đăng nhập
+                            <form class="login-content" action="#" method="post">
+                                <label class="username">
+                                    <span>Tên tài khoản</span>
+                                    <input id="username" type="text" autocomplete="on" name="username" placeholder="Tên tài khoản" value="" />
+                                </label>
+                                <label class="password">
+                                    <span>Mật khẩu</span>
+                                    <input id="password" type="password" name="password" placeholder="Mật khẩu" value="" />
+                                </label>
+                                <button class="button submit-button" type="button" onclick="check()">Đăng nhập</button>
+                                <button class="button submit-button" type="button" onclick="alert(produce.soluongban)">Đăng ký</button>
+                                <br>
+                                <a class="forgot" href="#">Quên mật khẩu?</a></form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <script src="assets/login.js"></script>
+    <script src="assets/list.js"></script>
+    <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
