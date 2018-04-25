@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html php>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="15">
     <link rel="icon" type="image/ico" href="image/home.png" />
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/login.css">
+    <script src='https://www.google.com/recaptcha/api.js?hl=vi'></script>
     <script type="text/javascript" src="assets/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
     function check() {
@@ -24,9 +24,118 @@
         }
     }
     </script>
-</head>
+    <script type="text/javascript">
+    function recaptchaCallback() {
+        $('#submitBtn').removeAttr('disabled');
+    };
+    </script>
+    <script type="text/javascript">
+    var Produces = [];
+    Produces.push({ ten: "Inspiron 7577 – N7577A", hinh: "0.jpg", gia: "27.190.000", soluotxem: 675, soluotban: 22, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
 
+    Produces.push({ ten: " Dell Vostro V3568 XF6C61", hinh: "1.jpg", gia: "11.849.000", soluotxem: 1266, soluotban: 74, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+
+    Produces.push({ ten: "Dell XPS 15 9560 70123080", hinh: "2.jpg", gia: "4.8589.000", soluotxem: 265, soluotban: 17, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+
+    Produces.push({ ten: "Dell XPS13 9360 70148070 ", hinh: "3.jpg", gia: "3.2899.000", soluotxem: 325, soluotban: 26, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+
+    Produces.push({ ten: "Dell Vostro 3468 70145235", hinh: "4.jpg", gia: "9.799.000", soluotxem: 1025, soluotban: 85, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+
+    Produces.push({ ten: "Dell Latitude 7389 70144353", hinh: "5.jpg", gia: "33.909.000", soluotxem: 574, soluotban: 25, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+
+    Produces.push({ ten: "Asus FX503VD-E4082T", hinh: "6.jpg", gia: "18.699.000", soluotxem: 345, soluotban: 18, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus" })
+
+    Produces.push({ ten: "Asus ZenBook UX430UA-GV261T", hinh: "7.jpg", gia: "19.459.000", soluotxem: 214, soluotban: 8, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus" })
+
+    Produces.push({ ten: "Asus X441UA-WX027T", hinh: "8.jpg", gia: "9.149.000", soluotxem: 685, soluotban: 56, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus" })
+
+    Produces.push({ ten: "HP Pavillon 14-AL114TU Z6X73PA", hinh: "9.jpg", gia: "9.699.000", soluotxem: 546, soluotban: 102, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP" })
+
+    Produces.push({ ten: "HP Probook 450 G5 2XR60PA", hinh: "10.jpg", gia: "16.099.000", soluotxem: 214, soluotban: 28, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP" })
+
+    Produces.push({ ten: "Samsung Galaxy Tab E T561", hinh: "11.jpg", gia: "3.949.000", soluotxem: 342, soluotban: 85, mota: "123", xuatxu: "Hàn Quốc", loai: "Tablet", nhasanxuat: "Samsung" })
+
+    Produces.push({ ten: "Samsung Galaxy J7 Pro", hinh: "12.jpg", gia: "5.590.000", soluotxem: 2654, soluotban: 542, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung" })
+
+    Produces.push({ ten: "Samsung Galaxy A8 Plus", hinh: "13.jpg", gia: "12.990.000", soluotxem: 1752, soluotban: 156, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung" })
+
+    Produces.push({ ten: "iPhone 6 32GB", hinh: "14.jpg", gia: "6.890.000", soluotxem: 5621, soluotban: 632, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple" })
+
+    Produces.push({ ten: "iPad WiFi 32GB", hinh: "15.jpg", gia: "8.490.000", soluotxem: 663, soluotban: 75, mota: "123", xuatxu: "USA", loai: "Tablet", nhasanxuat: "Apple" })
+
+    Produces.push({ ten: "iPhone 8 Plus 64GB", hinh: "16.jpg", gia: "20.300.000", soluotxem: 1285, soluotban: 265, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple" })
+
+    Produces.push({ ten: "Asus Zenfone Max Plus M1 ZB570TL", hinh: "17.jpg", gia: "4.690.000", soluotxem: 231, soluotban: 34, mota: "123", xuatxu: "Đài Loan", loai: "Smartphone", nhasanxuat: "Asus" })
+
+    Produces.push({ ten: "Xiaomi Mi Mix 2", hinh: "18.jpg", gia: "9.990.000", soluotxem: 2351, soluotban: 356, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi" })
+
+    Produces.push({ ten: "Xiaomi Redmi 5 Plus", hinh: "19.jpg", gia: "3.650.000", soluotxem: 1687, soluotban: 265, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi" })
+
+    Produces.push({ ten: "Xiaomi Redmi Note 5 Pro", hinh: "20.jpg", gia: "5.350.000", soluotxem: 2164, soluotban: 421, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi" })
+
+    Produces.push({ ten: "TOYOTA VIOS 1.5E MT", hinh: "21.jpg", gia: "499.000.000", soluotxem: 321, soluotban: 12, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+
+    Produces.push({ ten: "TOYOTA INNOVA 2.0G", hinh: "22.jpg", gia: "816.000.000", soluotxem: 687, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+
+    Produces.push({ ten: "TOYOTA FORTUNER 2.7V 4X2", hinh: "23.jpg", gia: "1.079.000.000", soluotxem: 1231, soluotban: 231, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+
+    Produces.push({ ten: "TOYOTA COROLLA ALTIS 1.8E MT", hinh: "24.jpg", gia: "678.000.000", soluotxem: 623, soluotban: 103, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+
+    Produces.push({ ten: "TOYOTA VIOS 1.5G TRD", hinh: "25.jpg", gia: "566.000.000", soluotxem: 237, soluotban: 38, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+
+    Produces.push({ ten: "TOYOTA CAMRY 2.0E", hinh: "26.jpg", gia: "967.000.000", soluotxem: 1022, soluotban: 421, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+
+    Produces.push({ ten: "HYUNDAI ACCENT 1.4 AT", hinh: "27.jpg", gia: "540.000.000", soluotxem: 848, soluotban: 112, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+
+    Produces.push({ ten: "HYUNDAI GRAND I10 1.2 AT", hinh: "28.jpg", gia: "402.000.000", soluotxem: 562, soluotban: 89, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+
+    Produces.push({ ten: "HYUNDAI ELANTRA 1.6 MT", hinh: "29.jpg", gia: "555.000.000", soluotxem: 668, soluotban: 124, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+
+    Produces.push({ ten: "HYUNDAI ELANTRA SPORT", hinh: "30.jpg", gia: "719.000.000", soluotxem: 721, soluotban: 142, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+
+    Produces.push({ ten: "HYUNDAI TUCSON 1.6 AT SPEC", hinh: "31.jpg", gia: "882.000.000", soluotxem: 457, soluotban: 66, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+
+    Produces.push({ ten: "HYUNDAI ACCENT 1.4 MT", hinh: "32.jpg", gia: "425.000.000", soluotxem: 324, soluotban: 48, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+
+    Produces.push({ ten: "MERCEDES-BENZ E-CLASS 300 AMG", hinh: "33.jpg", gia: "2.769.000.000", soluotxem: 826, soluotban: 122, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+
+    Produces.push({ ten: "MERCEDES-BENZ C-CLASS 200", hinh: "34.jpg", gia: "1.489.000.000", soluotxem: 582, soluotban: 97, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+
+    Produces.push({ ten: "MERCEDES-BENZ GLC-CLASS 300", hinh: "35.jpg", gia: "2.209.000.000", soluotxem: 669, soluotban: 89, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+
+    Produces.push({ ten: "MERCEDES-BENZ E-CLASS 200 BE", hinh: "36.jpg", gia: "2.990.000.000", soluotxem: 1024, soluotban: 227, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+
+    Produces.push({ ten: "MERCEDES-BENZ GLC-CLASS 250", hinh: "37.jpg", gia: "1.939.000.000", soluotxem: 624, soluotban: 63, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+
+    Produces.push({ ten: "HONDA JAZZ RS", hinh: "38.jpg", gia: "624.000.000", soluotxem: 428, soluotban: 36, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda" })
+
+    Produces.push({ ten: "HONDA CITY 1.5", hinh: "39.jpg", gia: "559.000.000", soluotxem: 559, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda" })
+
+    Produces.push({ ten: "HONDA CIVIC 1.5L", hinh: "40.jpg", gia: "831.000.000", soluotxem: 621, soluotban: 47, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda" })
+
+    Produces.push({ ten: "HONDA CR-V L", hinh: "41.jpg", gia: "1.730.000.000", soluotxem: 882, soluotban: 102, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda" })
+    var total = Produces.length;
+    var htmlResult = "";
+    for (var i = 0; i < total; i++) {
+        var produce = Produces[i];
+        var image = "image/" + produce.hinh;
+        htmlResult += "<div class='itembox'><img src=" + image + " style='width: 205px; height: 200px'><div style='text-align: center;'>" + produce.ten + "</div><div style='text-align: center;'>" + produce.gia + " đ" + "</div></div>"
+    }
+    </script>
+    <style type="text/css">
+        .itembox{
+            float: left; 
+            margin: 8px 8px; 
+            text-align: center;
+            width: 205px;
+            height: 260px;
+            background-color: white;
+        }
+    </style>
+</head>
+    
 <body style="background-color: #f0f0f0">
+    
     <nav class="navbar navbar-default">
         <div class="container-fluid" style="background-color: #469df4">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,16 +148,16 @@
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Tìm sản phẩm mong muốn...">
                     </div>
-                    <button type="submit" class="btn btn-default">Tìm kiếm</button>
+                    <button type="submit" class="btn btn-default" onclick="alert(Produces[20].ten)">Tìm kiếm</button>
                 </form>
                 <ul class="nav navbar-nav col-md-4 col-xs-6">
-                    <li><a href="#" style="color: white"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Theo dõi đơn hàng</span></span></a></li>
                     <li><a href="#" style="color: white"><span class="glyphicon glyphicon-bell" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Thông báo của bạn</span></span></a></li>
+                    <li><a href="#" style="color: white"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Giỏ hàng</span></span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-md-2">
                     <li>
-                        <a class="login-window" href="#login-box" style="color: white">Đăng nhập/Đăng ký</a>
-                        <div class="login" id="login-box">Đăng nhập
+                        <a class="login-window" href="#login-box" style="color: white">Đăng nhập</a>
+                        <div class="login" id="login-box" style="top: 300%; left: -0%">Đăng nhập
                             <form class="login-content" action="#" method="post">
                                 <label class="username">
                                     <span>Tên tài khoản</span>
@@ -59,9 +168,30 @@
                                     <input id="password" type="password" name="password" placeholder="Mật khẩu" value="" />
                                 </label>
                                 <button class="button submit-button" type="button" onclick="check()">Đăng nhập</button>
-                                <button class="button submit-button" type="button" onclick="alert(produce.soluongban)">Đăng ký</button>
                                 <br>
-                                <a class="forgot" href="#">Quên mật khẩu?</a></form>
+                                <a class="forgot" href="#">Quên mật khẩu?</a>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="login-window" href="#resign-box" style="color: white">Đăng ký</a>
+                        <div class="login" id="resign-box" style="top: 200%; left: -250%">Đăng ký
+                            <form class="login-content" id="comment_form" action="" method="post">
+                                <label class="username">
+                                    <span>Tên tài khoản</span>
+                                    <input id="username" type="text" autocomplete="on" name="username" placeholder="Tên tài khoản" required="name" value="" />
+                                </label>
+                                <label class="password">
+                                    <span>Mật khẩu</span>
+                                    <input id="password" type="password" name="password" placeholder="Mật khẩu" value="" required="password" />
+                                </label>
+                                <label class="username">
+                                    <span>Email address</span>
+                                    <input id="email" type="email" autocomplete="on" name="email" placeholder="Tên email" required="email" value="" />
+                                </label>
+                                <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdJ8VQUAAAAABAPC2I4InbujcXL1TSgio0kEur3"></div>
+                                <button class="button submit-button" type="submit" id="submitBtn" disabled>Đăng ký</button>
+                            </form>
                         </div>
                     </li>
                 </ul>
@@ -70,9 +200,52 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <div class="row">
+        <div class="col-md-2">
+            <br>
+            <br>
+            <ul class="nav nav-tabs" role="tablist">
+                Danh sách loại sản phẩm
+                <li role="presentation" style="float: none"><a href="#loai1" aria-controls="loai1" role="tab" data-toggle="tab">Loai1</a></li>
+                <li role="presentation" style="float: none"><a href="#loai2" aria-controls="loai2" role="tab" data-toggle="tab">loai2</a></li>
+                <li role="presentation" style="float: none"><a href="#loai3" aria-controls="loai3" role="tab" data-toggle="tab">loai3</a></li>
+                <li role="presentation" style="float: none"><a href="#loai4" aria-controls="loai4" role="tab" data-toggle="tab">loai4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home" style="padding-left: 6px">
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                <div role="tabpanel" class="tab-pane" id="loai1">
+                    111111111111
+                </div>
+                <div role="tabpanel" class="tab-pane" id="loai2">
+                    222222222222
+                </div>
+                <div role="tabpanel" class="tab-pane" id="loai3">
+                    333333333333
+                </div>
+                <div role="tabpanel" class="tab-pane" id="loai4">
+                    444444444444
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/jquery-3.3.1.min.js"></script>
     <script src="assets/login.js"></script>
-    <script src="assets/list.js"></script>
+    <script type="">$("#home").html(htmlResult);</script>
     <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 </body>
 

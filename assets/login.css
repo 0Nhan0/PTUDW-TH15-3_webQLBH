@@ -27,8 +27,8 @@
         overflow: hidden;
         position: absolute;
         z-index: 99999;
-        top: 400	%;
-        margin-left: -430%;
+        top: 400%;
+        margin-left: -650%;
     }
 
     .login .login_title {
