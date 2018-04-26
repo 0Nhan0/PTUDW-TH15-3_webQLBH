@@ -23,6 +23,27 @@
                 window.location = "./member.html"
         }
     }
+
+    function add(id) {
+        alert(id);
+    }
+
+    function checkloai(){
+        str = document.getElementById("lilaptop").className;
+        if(str == "active")
+        {
+            alert("456");
+        }
+    }
+
+    function resetloai(){
+        alert(document.getElementById("lilaptop").className);
+        document.getElementById("lilaptop").className = "";
+        document.getElementById("lismartphone").className = "";
+        document.getElementById("litablet").className = "";
+        document.getElementById("licar").className = "";
+    }
+
     </script>
     <script type="text/javascript">
     function recaptchaCallback() {
@@ -31,111 +52,247 @@
     </script>
     <script type="text/javascript">
     var Produces = [];
-    Produces.push({ ten: "Inspiron 7577 – N7577A", hinh: "0.jpg", gia: "27.190.000", soluotxem: 675, soluotban: 22, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+    Produces.push({ id: 0, ten: "Inspiron 7577 – N7577A", hinh: "0.jpg", gia: "27.190.000", soluotxem: 675, soluotban: 22, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "03/30/2018" })
 
-    Produces.push({ ten: " Dell Vostro V3568 XF6C61", hinh: "1.jpg", gia: "11.849.000", soluotxem: 1266, soluotban: 74, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+    Produces.push({ id: 1, ten: " Dell Vostro V3568 XF6C61", hinh: "1.jpg", gia: "11.849.000", soluotxem: 1266, soluotban: 74, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "12/26/2017" })
 
-    Produces.push({ ten: "Dell XPS 15 9560 70123080", hinh: "2.jpg", gia: "4.8589.000", soluotxem: 265, soluotban: 17, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+    Produces.push({ id: 2, ten: "Dell XPS 15 9560 70123080", hinh: "2.jpg", gia: "4.8589.000", soluotxem: 265, soluotban: 17, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "01/27/2018" })
 
-    Produces.push({ ten: "Dell XPS13 9360 70148070 ", hinh: "3.jpg", gia: "3.2899.000", soluotxem: 325, soluotban: 26, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+    Produces.push({ id: 3, ten: "Dell XPS13 9360 70148070 ", hinh: "3.jpg", gia: "3.2899.000", soluotxem: 325, soluotban: 26, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "04/20/2018" })
 
-    Produces.push({ ten: "Dell Vostro 3468 70145235", hinh: "4.jpg", gia: "9.799.000", soluotxem: 1025, soluotban: 85, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+    Produces.push({ id: 5, ten: "Dell Vostro 3468 70145235", hinh: "4.jpg", gia: "9.799.000", soluotxem: 1025, soluotban: 85, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/14/2018" })
 
-    Produces.push({ ten: "Dell Latitude 7389 70144353", hinh: "5.jpg", gia: "33.909.000", soluotxem: 574, soluotban: 25, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell" })
+    Produces.push({ id: 6, ten: "Dell Latitude 7389 70144353", hinh: "5.jpg", gia: "33.909.000", soluotxem: 574, soluotban: 25, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/15/2018" })
 
-    Produces.push({ ten: "Asus FX503VD-E4082T", hinh: "6.jpg", gia: "18.699.000", soluotxem: 345, soluotban: 18, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus" })
+    Produces.push({ id: 7, ten: "Asus FX503VD-E4082T", hinh: "6.jpg", gia: "18.699.000", soluotxem: 345, soluotban: 18, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/15/2018" })
 
-    Produces.push({ ten: "Asus ZenBook UX430UA-GV261T", hinh: "7.jpg", gia: "19.459.000", soluotxem: 214, soluotban: 8, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus" })
+    Produces.push({ id: 8, ten: "Asus ZenBook UX430UA-GV261T", hinh: "7.jpg", gia: "19.459.000", soluotxem: 214, soluotban: 8, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/20/2018" })
 
-    Produces.push({ ten: "Asus X441UA-WX027T", hinh: "8.jpg", gia: "9.149.000", soluotxem: 685, soluotban: 56, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus" })
+    Produces.push({ id: 9, ten: "Asus X441UA-WX027T", hinh: "8.jpg", gia: "9.149.000", soluotxem: 685, soluotban: 56, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "03/26/2018" })
 
-    Produces.push({ ten: "HP Pavillon 14-AL114TU Z6X73PA", hinh: "9.jpg", gia: "9.699.000", soluotxem: 546, soluotban: 102, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP" })
+    Produces.push({ id: 10, ten: "HP Pavillon 14-AL114TU Z6X73PA", hinh: "9.jpg", gia: "9.699.000", soluotxem: 546, soluotban: 102, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "03/21/2018" })
 
-    Produces.push({ ten: "HP Probook 450 G5 2XR60PA", hinh: "10.jpg", gia: "16.099.000", soluotxem: 214, soluotban: 28, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP" })
+    Produces.push({ id: 11, ten: "HP Probook 450 G5 2XR60PA", hinh: "10.jpg", gia: "16.099.000", soluotxem: 214, soluotban: 28, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "12/26/2017" })
 
-    Produces.push({ ten: "Samsung Galaxy Tab E T561", hinh: "11.jpg", gia: "3.949.000", soluotxem: 342, soluotban: 85, mota: "123", xuatxu: "Hàn Quốc", loai: "Tablet", nhasanxuat: "Samsung" })
+    Produces.push({ id: 12, ten: "Samsung Galaxy Tab E T561", hinh: "11.jpg", gia: "3.949.000", soluotxem: 342, soluotban: 85, mota: "123", xuatxu: "Hàn Quốc", loai: "Tablet", nhasanxuat: "Samsung", ngaynhan: "11/20/2017" })
 
-    Produces.push({ ten: "Samsung Galaxy J7 Pro", hinh: "12.jpg", gia: "5.590.000", soluotxem: 2654, soluotban: 542, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung" })
+    Produces.push({ id: 13, ten: "Samsung Galaxy J7 Pro", hinh: "12.jpg", gia: "5.590.000", soluotxem: 2654, soluotban: 542, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/02/2018" })
 
-    Produces.push({ ten: "Samsung Galaxy A8 Plus", hinh: "13.jpg", gia: "12.990.000", soluotxem: 1752, soluotban: 156, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung" })
+    Produces.push({ id: 14, ten: "Samsung Galaxy A8 Plus", hinh: "13.jpg", gia: "12.990.000", soluotxem: 1752, soluotban: 156, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/03/2018" })
 
-    Produces.push({ ten: "iPhone 6 32GB", hinh: "14.jpg", gia: "6.890.000", soluotxem: 5621, soluotban: 632, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple" })
+    Produces.push({ id: 15, ten: "iPhone 6 32GB", hinh: "14.jpg", gia: "6.890.000", soluotxem: 5621, soluotban: 632, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "03/08/2018" })
 
-    Produces.push({ ten: "iPad WiFi 32GB", hinh: "15.jpg", gia: "8.490.000", soluotxem: 663, soluotban: 75, mota: "123", xuatxu: "USA", loai: "Tablet", nhasanxuat: "Apple" })
+    Produces.push({ id: 16, ten: "iPad WiFi 32GB", hinh: "15.jpg", gia: "8.490.000", soluotxem: 663, soluotban: 75, mota: "123", xuatxu: "USA", loai: "Tablet", nhasanxuat: "Apple", ngaynhan: "04/08/2018" })
 
-    Produces.push({ ten: "iPhone 8 Plus 64GB", hinh: "16.jpg", gia: "20.300.000", soluotxem: 1285, soluotban: 265, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple" })
+    Produces.push({ id: 17, ten: "iPhone 8 Plus 64GB", hinh: "16.jpg", gia: "20.300.000", soluotxem: 1285, soluotban: 265, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "04/09/2018" })
 
-    Produces.push({ ten: "Asus Zenfone Max Plus M1 ZB570TL", hinh: "17.jpg", gia: "4.690.000", soluotxem: 231, soluotban: 34, mota: "123", xuatxu: "Đài Loan", loai: "Smartphone", nhasanxuat: "Asus" })
+    Produces.push({ id: 18, ten: "Asus Zenfone Max Plus M1 ZB570TL", hinh: "17.jpg", gia: "4.690.000", soluotxem: 231, soluotban: 34, mota: "123", xuatxu: "Đài Loan", loai: "Smartphone", nhasanxuat: "Asus", ngaynhan: "04/12/2018" })
 
-    Produces.push({ ten: "Xiaomi Mi Mix 2", hinh: "18.jpg", gia: "9.990.000", soluotxem: 2351, soluotban: 356, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi" })
+    Produces.push({ id: 19, ten: "Xiaomi Mi Mix 2", hinh: "18.jpg", gia: "9.990.000", soluotxem: 2351, soluotban: 356, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "12/09/2017" })
 
-    Produces.push({ ten: "Xiaomi Redmi 5 Plus", hinh: "19.jpg", gia: "3.650.000", soluotxem: 1687, soluotban: 265, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi" })
+    Produces.push({ id: 20, ten: "Xiaomi Redmi 5 Plus", hinh: "19.jpg", gia: "3.650.000", soluotxem: 1687, soluotban: 265, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "03/11/2018" })
 
-    Produces.push({ ten: "Xiaomi Redmi Note 5 Pro", hinh: "20.jpg", gia: "5.350.000", soluotxem: 2164, soluotban: 421, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi" })
+    Produces.push({ id: 21, ten: "Xiaomi Redmi Note 5 Pro", hinh: "20.jpg", gia: "5.350.000", soluotxem: 2164, soluotban: 421, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "01/01/2018" })
 
-    Produces.push({ ten: "TOYOTA VIOS 1.5E MT", hinh: "21.jpg", gia: "499.000.000", soluotxem: 321, soluotban: 12, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+    Produces.push({ id: 22, ten: "TOYOTA VIOS 1.5E MT", hinh: "21.jpg", gia: "499.000.000", soluotxem: 321, soluotban: 12, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "01/17/2018" })
 
-    Produces.push({ ten: "TOYOTA INNOVA 2.0G", hinh: "22.jpg", gia: "816.000.000", soluotxem: 687, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+    Produces.push({ id: 23, ten: "TOYOTA INNOVA 2.0G", hinh: "22.jpg", gia: "816.000.000", soluotxem: 687, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "03/22/2018" })
 
-    Produces.push({ ten: "TOYOTA FORTUNER 2.7V 4X2", hinh: "23.jpg", gia: "1.079.000.000", soluotxem: 1231, soluotban: 231, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+    Produces.push({ id: 24, ten: "TOYOTA FORTUNER 2.7V 4X2", hinh: "23.jpg", gia: "1.079.000.000", soluotxem: 1231, soluotban: 231, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
 
-    Produces.push({ ten: "TOYOTA COROLLA ALTIS 1.8E MT", hinh: "24.jpg", gia: "678.000.000", soluotxem: 623, soluotban: 103, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+    Produces.push({ id: 25, ten: "TOYOTA COROLLA ALTIS 1.8E MT", hinh: "24.jpg", gia: "678.000.000", soluotxem: 623, soluotban: 103, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
 
-    Produces.push({ ten: "TOYOTA VIOS 1.5G TRD", hinh: "25.jpg", gia: "566.000.000", soluotxem: 237, soluotban: 38, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+    Produces.push({ id: 26, ten: "TOYOTA VIOS 1.5G TRD", hinh: "25.jpg", gia: "566.000.000", soluotxem: 237, soluotban: 38, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/22/2018" })
 
-    Produces.push({ ten: "TOYOTA CAMRY 2.0E", hinh: "26.jpg", gia: "967.000.000", soluotxem: 1022, soluotban: 421, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota" })
+    Produces.push({ id: 27, ten: "TOYOTA CAMRY 2.0E", hinh: "26.jpg", gia: "967.000.000", soluotxem: 1022, soluotban: 421, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/24/2018" })
 
-    Produces.push({ ten: "HYUNDAI ACCENT 1.4 AT", hinh: "27.jpg", gia: "540.000.000", soluotxem: 848, soluotban: 112, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+    Produces.push({ ten: "HYUNDAI ACCENT 1.4 AT", hinh: "27.jpg", gia: "540.000.000", soluotxem: 848, soluotban: 112, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "04/12/2018" })
 
-    Produces.push({ ten: "HYUNDAI GRAND I10 1.2 AT", hinh: "28.jpg", gia: "402.000.000", soluotxem: 562, soluotban: 89, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+    Produces.push({ id: 28, ten: "HYUNDAI GRAND I10 1.2 AT", hinh: "28.jpg", gia: "402.000.000", soluotxem: 562, soluotban: 89, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/29/2018" })
 
-    Produces.push({ ten: "HYUNDAI ELANTRA 1.6 MT", hinh: "29.jpg", gia: "555.000.000", soluotxem: 668, soluotban: 124, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+    Produces.push({ id: 29, ten: "HYUNDAI ELANTRA 1.6 MT", hinh: "29.jpg", gia: "555.000.000", soluotxem: 668, soluotban: 124, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/29/2018" })
 
-    Produces.push({ ten: "HYUNDAI ELANTRA SPORT", hinh: "30.jpg", gia: "719.000.000", soluotxem: 721, soluotban: 142, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+    Produces.push({ id: 30, ten: "HYUNDAI ELANTRA SPORT", hinh: "30.jpg", gia: "719.000.000", soluotxem: 721, soluotban: 142, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/28/2018" })
 
-    Produces.push({ ten: "HYUNDAI TUCSON 1.6 AT SPEC", hinh: "31.jpg", gia: "882.000.000", soluotxem: 457, soluotban: 66, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+    Produces.push({ id: 31, ten: "HYUNDAI TUCSON 1.6 AT SPEC", hinh: "31.jpg", gia: "882.000.000", soluotxem: 457, soluotban: 66, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/20/2018" })
 
-    Produces.push({ ten: "HYUNDAI ACCENT 1.4 MT", hinh: "32.jpg", gia: "425.000.000", soluotxem: 324, soluotban: 48, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai" })
+    Produces.push({ id: 32, ten: "HYUNDAI ACCENT 1.4 MT", hinh: "32.jpg", gia: "425.000.000", soluotxem: 324, soluotban: 48, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/18/2018" })
 
-    Produces.push({ ten: "MERCEDES-BENZ E-CLASS 300 AMG", hinh: "33.jpg", gia: "2.769.000.000", soluotxem: 826, soluotban: 122, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+    Produces.push({ id: 33, ten: "MERCEDES-BENZ E-CLASS 300 AMG", hinh: "33.jpg", gia: "2.769.000.000", soluotxem: 826, soluotban: 122, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/09/2018" })
 
-    Produces.push({ ten: "MERCEDES-BENZ C-CLASS 200", hinh: "34.jpg", gia: "1.489.000.000", soluotxem: 582, soluotban: 97, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+    Produces.push({ id: 34, ten: "MERCEDES-BENZ C-CLASS 200", hinh: "34.jpg", gia: "1.489.000.000", soluotxem: 582, soluotban: 97, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/28/2018" })
 
-    Produces.push({ ten: "MERCEDES-BENZ GLC-CLASS 300", hinh: "35.jpg", gia: "2.209.000.000", soluotxem: 669, soluotban: 89, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+    Produces.push({ id: 35, ten: "MERCEDES-BENZ GLC-CLASS 300", hinh: "35.jpg", gia: "2.209.000.000", soluotxem: 669, soluotban: 89, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/15/2018" })
 
-    Produces.push({ ten: "MERCEDES-BENZ E-CLASS 200 BE", hinh: "36.jpg", gia: "2.990.000.000", soluotxem: 1024, soluotban: 227, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+    Produces.push({ id: 36, ten: "MERCEDES-BENZ E-CLASS 200 BE", hinh: "36.jpg", gia: "2.990.000.000", soluotxem: 1024, soluotban: 227, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/16/2018" })
 
-    Produces.push({ ten: "MERCEDES-BENZ GLC-CLASS 250", hinh: "37.jpg", gia: "1.939.000.000", soluotxem: 624, soluotban: 63, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz" })
+    Produces.push({ id: 37, ten: "MERCEDES-BENZ GLC-CLASS 250", hinh: "37.jpg", gia: "1.939.000.000", soluotxem: 624, soluotban: 63, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "01/29/2018" })
 
-    Produces.push({ ten: "HONDA JAZZ RS", hinh: "38.jpg", gia: "624.000.000", soluotxem: 428, soluotban: 36, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda" })
+    Produces.push({ id: 38, ten: "HONDA JAZZ RS", hinh: "38.jpg", gia: "624.000.000", soluotxem: 428, soluotban: 36, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "02/22/2018" })
 
-    Produces.push({ ten: "HONDA CITY 1.5", hinh: "39.jpg", gia: "559.000.000", soluotxem: 559, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda" })
+    Produces.push({ id: 39, ten: "HONDA CITY 1.5", hinh: "39.jpg", gia: "559.000.000", soluotxem: 559, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "01/31/2018" })
 
-    Produces.push({ ten: "HONDA CIVIC 1.5L", hinh: "40.jpg", gia: "831.000.000", soluotxem: 621, soluotban: 47, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda" })
+    Produces.push({ id: 40, ten: "HONDA CIVIC 1.5L", hinh: "40.jpg", gia: "831.000.000", soluotxem: 621, soluotban: 47, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "03/31/2018" })
 
-    Produces.push({ ten: "HONDA CR-V L", hinh: "41.jpg", gia: "1.730.000.000", soluotxem: 882, soluotban: 102, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda" })
-    var total = Produces.length;
-    var htmlResult = "";
+    Produces.push({ id: 41, ten: "HONDA CR-V L", hinh: "41.jpg", gia: "1.730.000.000", soluotxem: 882, soluotban: 102, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "04/18/2018" })
+
+    /*var htmlResult = "";
     for (var i = 0; i < total; i++) {
         var produce = Produces[i];
         var image = "image/" + produce.hinh;
-        htmlResult += "<div class='itembox'><img src=" + image + " style='width: 205px; height: 200px'><div style='text-align: center;'>" + produce.ten + "</div><div style='text-align: center;'>" + produce.gia + " đ" + "</div></div>"
+        htmlResult += "<div class='itembox'><img src=" + image + " style='width: 205px; height: 200px'><div style='text-align: center;'>" + produce.ten + "</div><div style='text-align: center;'>" + produce.gia + " đ" + "</div><div style='text-align: center;'>" + produce.ngaynhan + "</div></div>"
+    }*/
+    </script>
+    <script type="text/javascript">
+    var total = Produces.length;
+    var xeptheongaynhan = '<div class="col-md-4" style="float: none; color: #469df4"><h3>SẢN PHẨM MỚI NHẤT</h3></div><div id="carousel-ngaynhan" class="carousel slide" data-ride="carousel" data-type="multi" style="background-color: #e5e5e5"><div class="carousel-inner" role="listbox" style="width: 100%; height: 295px; text-align: center; margin-left: 15px; margin-right: 0px;">';
+    var temp = [];
+    var kt = 0;
+    var dem = 0;
+    var max = 0;
+    do {
+        for (var i = 1; i < total; i++) {
+            for (var j = 0; j < temp.length; j++) {
+                if (temp[j] == i) { kt = 1; break; }
+            }
+            if (kt == 1) { kt = 0; continue; }
+            var x = Produces[i].ngaynhan.split('/');
+            var y = Produces[max].ngaynhan.split('/');
+            if (parseInt(x[2]) > parseInt(y[2])) {
+                max = i
+            } else if (parseInt(x[2]) == parseInt(y[2])) {
+                if (parseInt(x[0]) > parseInt(y[0])) {
+                    max = i
+                } else if (parseInt(x[0]) == parseInt(y[0])) {
+                    if (parseInt(x[1]) > parseInt(y[1])) {
+                        max = i;
+                    }
+                }
+            }
+        }
+        temp.push(max);
+        max = 0;
+        for (var j = 0; j < temp.length; j++) {
+            if (temp[j] == max) { max = max + 1; }
+        }
+        dem = dem + 1;
+    } while (dem < 10)
+
+    for (var i = 0; i < temp.length; i++) {
+        var produce = Produces[temp[i]];
+        var image = "image/" + produce.hinh;
+        if (i == 0) {
+            xeptheongaynhan += '<div class="item active" style="width: 100%; height: 100%; float: left; margin: 10px 0px"><div style="width:205px; height: 295px; float: left; margin: 0px 5px"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 190px" class="img-responsive"><div>' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + '" đ"</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div></div>'
+        } else {
+            xeptheongaynhan += '<div class="item" style="width: 100%; height: 100%; float: left; margin: 10px 5px"><div style="width:205px; height: 295px; float: left; margin: 0px 5px"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 190px;" class="img-responsive"><div>' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + '" đ"</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div></div>'
+        }
     }
+    xeptheongaynhan += '</div><a class="left carousel-control" href="#carousel-ngaynhan" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-ngaynhan" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>'
+    </script>
+    <script type="text/javascript">
+    var total = Produces.length;
+    var xeptheosoluotban = '<div class="col-md-4" style="float: none; color: #469df4"><h3>SẢN PHẨM BÁN CHẠY NHẤT</h3></div><div id="carousel-luotban" class="carousel slide" data-ride="carousel" data-type="multi" style="background-color: #e5e5e5"><div class="carousel-inner" role="listbox" style="width: 100%; height: 295px; text-align: center; margin-left: 19px;margin-right: 0px;">';
+    var temp = [];
+    var kt = 0;
+    var dem = 0;
+    var max = 0;
+    do {
+        for (var i = 1; i < total; i++) {
+            for (var j = 0; j < temp.length; j++) {
+                if (temp[j] == i) { kt = 1; break; }
+            }
+            if (kt == 1) { kt = 0; continue; }
+            var x = Produces[i].soluotban;
+            var y = Produces[max].soluotban;
+            if(x > y) { max = i;}
+        }
+        temp.push(max);
+        max = 0;
+        for (var j = 0; j < temp.length; j++) {
+            if (temp[j] == max) { max = max + 1; }
+        }
+        dem = dem + 1;
+    } while (dem < 10)
+    for (var i = 0; i < temp.length; i++) {
+        var produce = Produces[temp[i]];
+        var image = "image/" + produce.hinh;
+        if (i == 0) {
+            xeptheosoluotban += '<div class="item active" style="width: 100%; height: 100%; float: left; margin: 10px 0px"><div style="width:205px; height: 295px; float: left; margin: 0px 5px"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 190px" class="img-responsive"><div>' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + '" đ"</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div></div>'
+        } else {
+            xeptheosoluotban += '<div class="item" style="width: 100%; height: 100%; float: left; margin: 10px 5px"><div style="width:205px; height: 295px; float: left; margin: 0px 5px"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 190px;" class="img-responsive"><div>' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + '" đ"</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div></div>'
+        }
+    }
+    xeptheosoluotban += '</div><a class="left carousel-control" href="#carousel-luotban" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-luotban" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>'
+    </script>
+    <script type="text/javascript">
+        var total = Produces.length;
+    var xeptheosoluotxem = '<div class="col-md-4" style="float: none; color: #469df4"><h3>SẢN PHẨM XEM NHIỀU NHẤT</h3></div><div id="carousel-luoxem" class="carousel slide" data-ride="carousel" data-type="multi" style="background-color: #e5e5e5"><div class="carousel-inner" role="listbox" style="width: 100%; height: 295px; text-align: center; margin-left: 19px;margin-right: 0px;">';
+    var temp = [];
+    var kt = 0;
+    var dem = 0;
+    var max = 0;
+    do {
+        for (var i = 1; i < total; i++) {
+            for (var j = 0; j < temp.length; j++) {
+                if (temp[j] == i) { kt = 1; break; }
+            }
+            if (kt == 1) { kt = 0; continue; }
+            var x = Produces[i].soluotxem;
+            var y = Produces[max].soluotxem;
+            if(x > y) { max = i;}
+        }
+        temp.push(max);
+        max = 0;
+        for (var j = 0; j < temp.length; j++) {
+            if (temp[j] == max) { max = max + 1; }
+        }
+        dem = dem + 1;
+    } while (dem < 10)
+    for (var i = 0; i < temp.length; i++) {
+        var produce = Produces[temp[i]];
+        var image = "image/" + produce.hinh;
+        if (i == 0) {
+            xeptheosoluotxem += '<div class="item active" style="width: 100%; height: 100%; float: left; margin: 10px 0px"><div style="width:205px; height: 295px; float: left; margin: 0px 5px"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 190px" class="img-responsive"><div>' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + '" đ"</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div></div>'
+        } else {
+            xeptheosoluotxem += '<div class="item" style="width: 100%; height: 100%; float: left; margin: 10px 5px"><div style="width:205px; height: 295px; float: left; margin: 0px 5px"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 190px;" class="img-responsive"><div>' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + '" đ"</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div></div>'
+        }
+    }
+    xeptheosoluotxem += '</div><a class="left carousel-control" href="#carousel-luoxem" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-luoxem" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>'
     </script>
     <style type="text/css">
-        .itembox{
-            float: left; 
-            margin: 8px 8px; 
-            text-align: center;
-            width: 205px;
-            height: 260px;
-            background-color: white;
+    @media all {
+
+        .carousel-inner>.item.next,
+        .carousel-inner>.item.active.right {
+            left: 0;
+            -webkit-transform: translate3d(20%, 0, 0);
+            transform: translate3d(20%, 0, 0);
         }
+        .carousel-inner>.item.prev,
+        .carousel-inner>.item.active.left {
+            left: 0;
+            -webkit-transform: translate3d(20%, 0, 0);
+            transform: translate3d(20%, 0, 0);
+        }
+        .carousel-control {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 5%;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            background-color: rgba(0, 0, 0, 0);
+            filter: alpha(opacity=50);
+            opacity: .5;
+        }
+    }
     </style>
 </head>
-    
+
 <body style="background-color: #f0f0f0">
-    
     <nav class="navbar navbar-default">
         <div class="container-fluid" style="background-color: #469df4">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -146,9 +303,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 col-md-8 col-xs-12">
                 <form class="navbar-form navbar-left col-md-3 col-xs-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Tìm sản phẩm mong muốn...">
+                        <input type="text" class="form-control" placeholder="Nhập tên sản phẩm mong muốn...">
                     </div>
-                    <button type="submit" class="btn btn-default" onclick="alert(Produces[20].ten)">Tìm kiếm</button>
+                    <button type="submit" class="btn btn-default" onclick="">Tìm kiếm</button>
                 </form>
                 <ul class="nav navbar-nav col-md-4 col-xs-6">
                     <li><a href="#" style="color: white"><span class="glyphicon glyphicon-bell" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Thông báo của bạn</span></span></a></li>
@@ -200,44 +357,54 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <div class="row">
+    <div class="row" style="padding-right: 1px">
         <div class="col-md-2">
             <br>
             <br>
             <ul class="nav nav-tabs" role="tablist">
-                Danh sách loại sản phẩm
-                <li role="presentation" style="float: none"><a href="#loai1" aria-controls="loai1" role="tab" data-toggle="tab">Loai1</a></li>
-                <li role="presentation" style="float: none"><a href="#loai2" aria-controls="loai2" role="tab" data-toggle="tab">loai2</a></li>
-                <li role="presentation" style="float: none"><a href="#loai3" aria-controls="loai3" role="tab" data-toggle="tab">loai3</a></li>
-                <li role="presentation" style="float: none"><a href="#loai4" aria-controls="loai4" role="tab" data-toggle="tab">loai4</a></li>
+                <div class='col-md-12' style='float: none; color: #469df4'>
+                    <h3>Loại sản phẩm</h3></div>
+                <li id="lilaptop" role="presentation" style="float: none; margin-left: 10px"><a id="laptop" href="#laptop" aria-controls="laptop" role="tab" data-toggle="tab">Laptop</a></li>
+                <li id="lismartphone" role="presentation" style="float: none; margin-left: 10px"><a id="smartphone" href="#smartphone" aria-controls="smartphone" role="tab" data-toggle="tab">Smart Phone</a></li>
+                <li id="litablet" role="presentation" style="float: none; margin-left: 10px"><a id="tablet" href="#tablet" aria-controls="tablet" role="tab" data-toggle="tab">Tablet</a></li>
+                <li id="licar" role="presentation" style="float: none; margin-left: 10px"><a id="car" href="#car" aria-controls="car" role="tab" data-toggle="tab">Car</a></li>
             </ul>
         </div>
         <div class="col-md-10">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                <li>
+                <div class="btn-group">
+                     <button type="button" class="btn btn-default dropdown-toggle" style="background-color: #f0f0f0; border-color: #f0f0f0; color: #3D7AB7; margin-top: 4px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Giá sản phẩm <span class="caret"></span>
+                    </button>
+                    <ul class = "dropdown-menu" style="background-color: #3D7AB7;">
+                        <li role="presentation"><a href="#gia1" aria-controls="gia1" role="tab" data-toggle="tab" onclick="checkloai()">0 đ - 10.000.000 đ</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li role="presentation"><a href="#xuatxu" aria-controls="xuatxu" role="tab" data-toggle="tab" onclick="resetloai()">Xuất xứ</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" onclick="resetloai()">Settings</a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home" style="padding-left: 6px">
+                <div role="tabpanel" class="tab-pane active" id="home">
                 </div>
-                <div role="tabpanel" class="tab-pane" id="profile">
+                <div role="tabpanel" class="tab-pane" id="gia1">
                 </div>
-                <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                <div role="tabpanel" class="tab-pane" id="xuatxu"></div>
                 <div role="tabpanel" class="tab-pane" id="settings">...</div>
-                <div role="tabpanel" class="tab-pane" id="loai1">
+                <div role="tabpanel" class="tab-pane" id="laptop">
                     111111111111
                 </div>
-                <div role="tabpanel" class="tab-pane" id="loai2">
+                <div role="tabpanel" class="tab-pane" id="smartphone">
                     222222222222
                 </div>
-                <div role="tabpanel" class="tab-pane" id="loai3">
+                <div role="tabpanel" class="tab-pane" id="tablet">
                     333333333333
                 </div>
-                <div role="tabpanel" class="tab-pane" id="loai4">
+                <div role="tabpanel" class="tab-pane" id="car">
                     444444444444
                 </div>
             </div>
@@ -245,7 +412,14 @@
     </div>
     <script src="assets/jquery-3.3.1.min.js"></script>
     <script src="assets/login.js"></script>
-    <script type="">$("#home").html(htmlResult);</script>
+    <script>
+    var htmlResult = xeptheongaynhan + xeptheosoluotban + xeptheosoluotxem;
+    $("#home").html(htmlResult);
+    </script>
+    <script type="">
+        $('.carousel[data-type="multi"] .item').each(function(){ var next = $(this).next(); if (!next.length) { next = $(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); for (var i=0;i
+        <3;i++) { next=next.next(); if (!next.length) { next=$ (this).siblings( ':first'); } next.children( ':first-child').clone().appendTo($(this)); } }); 
+    </script>
     <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 </body>
 
