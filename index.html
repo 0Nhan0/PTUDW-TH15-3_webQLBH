@@ -11,39 +11,6 @@
     <script src='https://www.google.com/recaptcha/api.js?hl=vi'></script>
     <script type="text/javascript" src="assets/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
-    function check() {
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        if (username == "admin") {
-            if (password == "123")
-                window.location = "./admin.html";
-        }
-        if (username == "member") {
-            if (password == "123")
-                window.location = "./member.html"
-        }
-    }
-
-    function add(id) {
-        alert(id);
-    }
-
-    function checkloai(){
-        str = document.getElementById("lilaptop").className;
-        if(str == "active")
-        {
-            alert("456");
-        }
-    }
-
-    function resetloai(){
-        alert(document.getElementById("lilaptop").className);
-        document.getElementById("lilaptop").className = "";
-        document.getElementById("lismartphone").className = "";
-        document.getElementById("litablet").className = "";
-        document.getElementById("licar").className = "";
-    }
-
     </script>
     <script type="text/javascript">
     function recaptchaCallback() {
@@ -52,89 +19,89 @@
     </script>
     <script type="text/javascript">
     var Produces = [];
-    Produces.push({ id: 0, ten: "Inspiron 7577 – N7577A", hinh: "0.jpg", gia: "27.190.000", soluotxem: 675, soluotban: 22, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "03/30/2018" })
+    Produces.push({ id: 0, ten: "Inspiron 7577 – N7577A", hinh: "0.jpg", gia: "27.190.000", soluong: 100, soluotxem: 675, soluotban: 22, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "03/30/2018" })
 
-    Produces.push({ id: 1, ten: " Dell Vostro V3568 XF6C61", hinh: "1.jpg", gia: "11.849.000", soluotxem: 1266, soluotban: 74, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "12/26/2017" })
+    Produces.push({ id: 1, ten: " Dell Vostro V3568 XF6C61", hinh: "1.jpg", gia: "11.849.000", soluong: 100, soluotxem: 1266, soluotban: 74, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "12/26/2017" })
 
-    Produces.push({ id: 2, ten: "Dell XPS 15 9560 70123080", hinh: "2.jpg", gia: "4.8589.000", soluotxem: 265, soluotban: 17, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "01/27/2018" })
+    Produces.push({ id: 2, ten: "Dell XPS 15 9560 70123080", hinh: "2.jpg", gia: "48.589.000", soluong: 100, soluotxem: 265, soluotban: 17, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "01/27/2018" })
 
-    Produces.push({ id: 3, ten: "Dell XPS13 9360 70148070 ", hinh: "3.jpg", gia: "3.2899.000", soluotxem: 325, soluotban: 26, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "04/20/2018" })
+    Produces.push({ id: 3, ten: "Dell XPS13 9360 70148070 ", hinh: "3.jpg", gia: "3.2899.000", soluong: 100, soluotxem: 325, soluotban: 26, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "04/20/2018" })
 
-    Produces.push({ id: 5, ten: "Dell Vostro 3468 70145235", hinh: "4.jpg", gia: "9.799.000", soluotxem: 1025, soluotban: 85, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/14/2018" })
+    Produces.push({ id: 5, ten: "Dell Vostro 3468 70145235", hinh: "4.jpg", gia: "9.799.000", soluong: 100, soluotxem: 1025, soluotban: 85, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/14/2018" })
 
-    Produces.push({ id: 6, ten: "Dell Latitude 7389 70144353", hinh: "5.jpg", gia: "33.909.000", soluotxem: 574, soluotban: 25, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/15/2018" })
+    Produces.push({ id: 6, ten: "Dell Latitude 7389 70144353", hinh: "5.jpg", gia: "33.909.000", soluong: 100, soluotxem: 574, soluotban: 25, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/15/2018" })
 
-    Produces.push({ id: 7, ten: "Asus FX503VD-E4082T", hinh: "6.jpg", gia: "18.699.000", soluotxem: 345, soluotban: 18, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/15/2018" })
+    Produces.push({ id: 7, ten: "Asus FX503VD-E4082T", hinh: "6.jpg", gia: "18.699.000", soluong: 100, soluotxem: 345, soluotban: 18, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/15/2018" })
 
-    Produces.push({ id: 8, ten: "Asus ZenBook UX430UA-GV261T", hinh: "7.jpg", gia: "19.459.000", soluotxem: 214, soluotban: 8, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/20/2018" })
+    Produces.push({ id: 8, ten: "Asus ZenBook UX430UA-GV261T", hinh: "7.jpg", gia: "19.459.000", soluong: 100, soluotxem: 214, soluotban: 8, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/20/2018" })
 
-    Produces.push({ id: 9, ten: "Asus X441UA-WX027T", hinh: "8.jpg", gia: "9.149.000", soluotxem: 685, soluotban: 56, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "03/26/2018" })
+    Produces.push({ id: 9, ten: "Asus X441UA-WX027T", hinh: "8.jpg", gia: "9.149.000", soluong: 100, soluotxem: 685, soluotban: 56, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "03/26/2018" })
 
-    Produces.push({ id: 10, ten: "HP Pavillon 14-AL114TU Z6X73PA", hinh: "9.jpg", gia: "9.699.000", soluotxem: 546, soluotban: 102, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "03/21/2018" })
+    Produces.push({ id: 10, ten: "HP Pavillon 14-AL114TU Z6X73PA", hinh: "9.jpg", gia: "9.699.000", soluong: 100, soluotxem: 546, soluotban: 102, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "03/21/2018" })
 
-    Produces.push({ id: 11, ten: "HP Probook 450 G5 2XR60PA", hinh: "10.jpg", gia: "16.099.000", soluotxem: 214, soluotban: 28, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "12/26/2017" })
+    Produces.push({ id: 11, ten: "HP Probook 450 G5 2XR60PA", hinh: "10.jpg", gia: "16.099.000", soluong: 100, soluotxem: 214, soluotban: 28, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "12/26/2017" })
 
-    Produces.push({ id: 12, ten: "Samsung Galaxy Tab E T561", hinh: "11.jpg", gia: "3.949.000", soluotxem: 342, soluotban: 85, mota: "123", xuatxu: "Hàn Quốc", loai: "Tablet", nhasanxuat: "Samsung", ngaynhan: "11/20/2017" })
+    Produces.push({ id: 12, ten: "Samsung Galaxy Tab E T561", hinh: "11.jpg", gia: "3.949.000", soluong: 100, soluotxem: 342, soluotban: 85, mota: "123", xuatxu: "Hàn Quốc", loai: "Tablet", nhasanxuat: "Samsung", ngaynhan: "11/20/2017" })
 
-    Produces.push({ id: 13, ten: "Samsung Galaxy J7 Pro", hinh: "12.jpg", gia: "5.590.000", soluotxem: 2654, soluotban: 542, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/02/2018" })
+    Produces.push({ id: 13, ten: "Samsung Galaxy J7 Pro", hinh: "12.jpg", gia: "5.590.000", soluong: 100, soluotxem: 2654, soluotban: 542, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/02/2018" })
 
-    Produces.push({ id: 14, ten: "Samsung Galaxy A8 Plus", hinh: "13.jpg", gia: "12.990.000", soluotxem: 1752, soluotban: 156, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/03/2018" })
+    Produces.push({ id: 14, ten: "Samsung Galaxy A8 Plus", hinh: "13.jpg", gia: "12.990.000", soluong: 100, soluotxem: 1752, soluotban: 156, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/03/2018" })
 
-    Produces.push({ id: 15, ten: "iPhone 6 32GB", hinh: "14.jpg", gia: "6.890.000", soluotxem: 5621, soluotban: 632, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "03/08/2018" })
+    Produces.push({ id: 15, ten: "iPhone 6 32GB", hinh: "14.jpg", gia: "6.890.000", soluong: 100, soluotxem: 5621, soluotban: 632, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "03/08/2018" })
 
-    Produces.push({ id: 16, ten: "iPad WiFi 32GB", hinh: "15.jpg", gia: "8.490.000", soluotxem: 663, soluotban: 75, mota: "123", xuatxu: "USA", loai: "Tablet", nhasanxuat: "Apple", ngaynhan: "04/08/2018" })
+    Produces.push({ id: 16, ten: "iPad WiFi 32GB", hinh: "15.jpg", gia: "8.490.000", soluong: 100, soluotxem: 663, soluotban: 75, mota: "123", xuatxu: "USA", loai: "Tablet", nhasanxuat: "Apple", ngaynhan: "04/08/2018" })
 
-    Produces.push({ id: 17, ten: "iPhone 8 Plus 64GB", hinh: "16.jpg", gia: "20.300.000", soluotxem: 1285, soluotban: 265, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "04/09/2018" })
+    Produces.push({ id: 17, ten: "iPhone 8 Plus 64GB", hinh: "16.jpg", gia: "20.300.000", soluong: 100, soluotxem: 1285, soluotban: 265, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "04/09/2018" })
 
-    Produces.push({ id: 18, ten: "Asus Zenfone Max Plus M1 ZB570TL", hinh: "17.jpg", gia: "4.690.000", soluotxem: 231, soluotban: 34, mota: "123", xuatxu: "Đài Loan", loai: "Smartphone", nhasanxuat: "Asus", ngaynhan: "04/12/2018" })
+    Produces.push({ id: 18, ten: "Asus Zenfone Max Plus M1 ZB570TL", hinh: "17.jpg", gia: "4.690.000", soluong: 100, soluotxem: 231, soluotban: 34, mota: "123", xuatxu: "Đài Loan", loai: "Smartphone", nhasanxuat: "Asus", ngaynhan: "04/12/2018" })
 
-    Produces.push({ id: 19, ten: "Xiaomi Mi Mix 2", hinh: "18.jpg", gia: "9.990.000", soluotxem: 2351, soluotban: 356, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "12/09/2017" })
+    Produces.push({ id: 19, ten: "Xiaomi Mi Mix 2", hinh: "18.jpg", gia: "9.990.000", soluong: 100, soluotxem: 2351, soluotban: 356, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "12/09/2017" })
 
-    Produces.push({ id: 20, ten: "Xiaomi Redmi 5 Plus", hinh: "19.jpg", gia: "3.650.000", soluotxem: 1687, soluotban: 265, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "03/11/2018" })
+    Produces.push({ id: 20, ten: "Xiaomi Redmi 5 Plus", hinh: "19.jpg", gia: "3.650.000", soluong: 100, soluotxem: 1687, soluotban: 265, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "03/11/2018" })
 
-    Produces.push({ id: 21, ten: "Xiaomi Redmi Note 5 Pro", hinh: "20.jpg", gia: "5.350.000", soluotxem: 2164, soluotban: 421, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "01/01/2018" })
+    Produces.push({ id: 21, ten: "Xiaomi Redmi Note 5 Pro", hinh: "20.jpg", gia: "5.350.000", soluong: 100, soluotxem: 2164, soluotban: 421, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "01/01/2018" })
 
-    Produces.push({ id: 22, ten: "TOYOTA VIOS 1.5E MT", hinh: "21.jpg", gia: "499.000.000", soluotxem: 321, soluotban: 12, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "01/17/2018" })
+    Produces.push({ id: 22, ten: "TOYOTA VIOS 1.5E MT", hinh: "21.jpg", gia: "499.000.000", soluong: 100, soluotxem: 321, soluotban: 12, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "01/17/2018" })
 
-    Produces.push({ id: 23, ten: "TOYOTA INNOVA 2.0G", hinh: "22.jpg", gia: "816.000.000", soluotxem: 687, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "03/22/2018" })
+    Produces.push({ id: 23, ten: "TOYOTA INNOVA 2.0G", hinh: "22.jpg", gia: "816.000.000", soluong: 100, soluotxem: 687, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "03/22/2018" })
 
-    Produces.push({ id: 24, ten: "TOYOTA FORTUNER 2.7V 4X2", hinh: "23.jpg", gia: "1.079.000.000", soluotxem: 1231, soluotban: 231, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
+    Produces.push({ id: 24, ten: "TOYOTA FORTUNER 2.7V 4X2", hinh: "23.jpg", gia: "1.079.000.000", soluong: 100, soluotxem: 1231, soluotban: 231, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
 
-    Produces.push({ id: 25, ten: "TOYOTA COROLLA ALTIS 1.8E MT", hinh: "24.jpg", gia: "678.000.000", soluotxem: 623, soluotban: 103, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
+    Produces.push({ id: 25, ten: "TOYOTA COROLLA ALTIS 1.8E MT", hinh: "24.jpg", gia: "678.000.000", soluong: 100, soluotxem: 623, soluotban: 103, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
 
-    Produces.push({ id: 26, ten: "TOYOTA VIOS 1.5G TRD", hinh: "25.jpg", gia: "566.000.000", soluotxem: 237, soluotban: 38, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/22/2018" })
+    Produces.push({ id: 26, ten: "TOYOTA VIOS 1.5G TRD", hinh: "25.jpg", gia: "566.000.000", soluong: 100, soluotxem: 237, soluotban: 38, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/22/2018" })
 
-    Produces.push({ id: 27, ten: "TOYOTA CAMRY 2.0E", hinh: "26.jpg", gia: "967.000.000", soluotxem: 1022, soluotban: 421, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/24/2018" })
+    Produces.push({ id: 27, ten: "TOYOTA CAMRY 2.0E", hinh: "26.jpg", gia: "967.000.000", soluong: 100, soluotxem: 1022, soluotban: 421, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/24/2018" })
 
-    Produces.push({ ten: "HYUNDAI ACCENT 1.4 AT", hinh: "27.jpg", gia: "540.000.000", soluotxem: 848, soluotban: 112, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "04/12/2018" })
+    Produces.push({ ten: "HYUNDAI ACCENT 1.4 AT", hinh: "27.jpg", gia: "540.000.000", soluong: 100, soluotxem: 848, soluotban: 112, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "04/12/2018" })
 
-    Produces.push({ id: 28, ten: "HYUNDAI GRAND I10 1.2 AT", hinh: "28.jpg", gia: "402.000.000", soluotxem: 562, soluotban: 89, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/29/2018" })
+    Produces.push({ id: 28, ten: "HYUNDAI GRAND I10 1.2 AT", hinh: "28.jpg", gia: "402.000.000", soluong: 100, soluotxem: 562, soluotban: 89, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/29/2018" })
 
-    Produces.push({ id: 29, ten: "HYUNDAI ELANTRA 1.6 MT", hinh: "29.jpg", gia: "555.000.000", soluotxem: 668, soluotban: 124, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/29/2018" })
+    Produces.push({ id: 29, ten: "HYUNDAI ELANTRA 1.6 MT", hinh: "29.jpg", gia: "555.000.000", soluong: 100, soluotxem: 668, soluotban: 124, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/29/2018" })
 
-    Produces.push({ id: 30, ten: "HYUNDAI ELANTRA SPORT", hinh: "30.jpg", gia: "719.000.000", soluotxem: 721, soluotban: 142, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/28/2018" })
+    Produces.push({ id: 30, ten: "HYUNDAI ELANTRA SPORT", hinh: "30.jpg", gia: "719.000.000", soluong: 100, soluotxem: 721, soluotban: 142, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/28/2018" })
 
-    Produces.push({ id: 31, ten: "HYUNDAI TUCSON 1.6 AT SPEC", hinh: "31.jpg", gia: "882.000.000", soluotxem: 457, soluotban: 66, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/20/2018" })
+    Produces.push({ id: 31, ten: "HYUNDAI TUCSON 1.6 AT SPEC", hinh: "31.jpg", gia: "882.000.000", soluong: 100, soluotxem: 457, soluotban: 66, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/20/2018" })
 
-    Produces.push({ id: 32, ten: "HYUNDAI ACCENT 1.4 MT", hinh: "32.jpg", gia: "425.000.000", soluotxem: 324, soluotban: 48, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/18/2018" })
+    Produces.push({ id: 32, ten: "HYUNDAI ACCENT 1.4 MT", hinh: "32.jpg", gia: "425.000.000", soluong: 100, soluotxem: 324, soluotban: 48, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/18/2018" })
 
-    Produces.push({ id: 33, ten: "MERCEDES-BENZ E-CLASS 300 AMG", hinh: "33.jpg", gia: "2.769.000.000", soluotxem: 826, soluotban: 122, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/09/2018" })
+    Produces.push({ id: 33, ten: "MERCEDES-BENZ E-CLASS 300 AMG", hinh: "33.jpg", gia: "2.769.000.000", soluong: 100, soluotxem: 826, soluotban: 122, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/09/2018" })
 
-    Produces.push({ id: 34, ten: "MERCEDES-BENZ C-CLASS 200", hinh: "34.jpg", gia: "1.489.000.000", soluotxem: 582, soluotban: 97, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/28/2018" })
+    Produces.push({ id: 34, ten: "MERCEDES-BENZ C-CLASS 200", hinh: "34.jpg", gia: "1.489.000.000", soluong: 100, soluotxem: 582, soluotban: 97, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/28/2018" })
 
-    Produces.push({ id: 35, ten: "MERCEDES-BENZ GLC-CLASS 300", hinh: "35.jpg", gia: "2.209.000.000", soluotxem: 669, soluotban: 89, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/15/2018" })
+    Produces.push({ id: 35, ten: "MERCEDES-BENZ GLC-CLASS 300", hinh: "35.jpg", gia: "2.209.000.000", soluong: 100, soluotxem: 669, soluotban: 89, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/15/2018" })
 
-    Produces.push({ id: 36, ten: "MERCEDES-BENZ E-CLASS 200 BE", hinh: "36.jpg", gia: "2.990.000.000", soluotxem: 1024, soluotban: 227, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/16/2018" })
+    Produces.push({ id: 36, ten: "MERCEDES-BENZ E-CLASS 200 BE", hinh: "36.jpg", gia: "2.990.000.000", soluong: 100, soluotxem: 1024, soluotban: 227, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "02/16/2018" })
 
-    Produces.push({ id: 37, ten: "MERCEDES-BENZ GLC-CLASS 250", hinh: "37.jpg", gia: "1.939.000.000", soluotxem: 624, soluotban: 63, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "01/29/2018" })
+    Produces.push({ id: 37, ten: "MERCEDES-BENZ GLC-CLASS 250", hinh: "37.jpg", gia: "1.939.000.000", soluong: 100, soluotxem: 624, soluotban: 63, mota: "123", xuatxu: "Đức", loai: "Car", nhasanxuat: "Mercedes-Benz", ngaynhan: "01/29/2018" })
 
-    Produces.push({ id: 38, ten: "HONDA JAZZ RS", hinh: "38.jpg", gia: "624.000.000", soluotxem: 428, soluotban: 36, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "02/22/2018" })
+    Produces.push({ id: 38, ten: "HONDA JAZZ RS", hinh: "38.jpg", gia: "624.000.000", soluong: 100, soluotxem: 428, soluotban: 36, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "02/22/2018" })
 
-    Produces.push({ id: 39, ten: "HONDA CITY 1.5", hinh: "39.jpg", gia: "559.000.000", soluotxem: 559, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "01/31/2018" })
+    Produces.push({ id: 39, ten: "HONDA CITY 1.5", hinh: "39.jpg", gia: "559.000.000", soluong: 100, soluotxem: 559, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "01/31/2018" })
 
-    Produces.push({ id: 40, ten: "HONDA CIVIC 1.5L", hinh: "40.jpg", gia: "831.000.000", soluotxem: 621, soluotban: 47, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "03/31/2018" })
+    Produces.push({ id: 40, ten: "HONDA CIVIC 1.5L", hinh: "40.jpg", gia: "831.000.000", soluong: 100, soluotxem: 621, soluotban: 47, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "03/31/2018" })
 
-    Produces.push({ id: 41, ten: "HONDA CR-V L", hinh: "41.jpg", gia: "1.730.000.000", soluotxem: 882, soluotban: 102, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "04/18/2018" })
+    Produces.push({ id: 41, ten: "HONDA CR-V L", hinh: "41.jpg", gia: "1.730.000.000", soluong: 100, soluotxem: 882, soluotban: 102, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Honda", ngaynhan: "04/18/2018" })
 
     /*var htmlResult = "";
     for (var i = 0; i < total; i++) {
@@ -191,7 +158,7 @@
     </script>
     <script type="text/javascript">
     var total = Produces.length;
-    var xeptheosoluotban = '<div class="col-md-4" style="float: none; color: #469df4"><h3>SẢN PHẨM BÁN CHẠY NHẤT</h3></div><div id="carousel-luotban" class="carousel slide" data-ride="carousel" data-type="multi" style="background-color: #e5e5e5"><div class="carousel-inner" role="listbox" style="width: 100%; height: 295px; text-align: center; margin-left: 19px;margin-right: 0px;">';
+    var xeptheosoluotban = '<div class="col-md-4" style="float: none; color: #469df4"><h3>SẢN PHẨM BÁN NHIỀU NHẤT</h3></div><div id="carousel-luotban" class="carousel slide" data-ride="carousel" data-type="multi" style="background-color: #e5e5e5"><div class="carousel-inner" role="listbox" style="width: 100%; height: 295px; text-align: center; margin-left: 19px;margin-right: 0px;">';
     var temp = [];
     var kt = 0;
     var dem = 0;
@@ -204,7 +171,7 @@
             if (kt == 1) { kt = 0; continue; }
             var x = Produces[i].soluotban;
             var y = Produces[max].soluotban;
-            if(x > y) { max = i;}
+            if (x > y) { max = i; }
         }
         temp.push(max);
         max = 0;
@@ -225,7 +192,7 @@
     xeptheosoluotban += '</div><a class="left carousel-control" href="#carousel-luotban" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-luotban" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>'
     </script>
     <script type="text/javascript">
-        var total = Produces.length;
+    var total = Produces.length;
     var xeptheosoluotxem = '<div class="col-md-4" style="float: none; color: #469df4"><h3>SẢN PHẨM XEM NHIỀU NHẤT</h3></div><div id="carousel-luoxem" class="carousel slide" data-ride="carousel" data-type="multi" style="background-color: #e5e5e5"><div class="carousel-inner" role="listbox" style="width: 100%; height: 295px; text-align: center; margin-left: 19px;margin-right: 0px;">';
     var temp = [];
     var kt = 0;
@@ -239,7 +206,7 @@
             if (kt == 1) { kt = 0; continue; }
             var x = Produces[i].soluotxem;
             var y = Produces[max].soluotxem;
-            if(x > y) { max = i;}
+            if (x > y) { max = i; }
         }
         temp.push(max);
         max = 0;
@@ -259,7 +226,534 @@
     }
     xeptheosoluotxem += '</div><a class="left carousel-control" href="#carousel-luoxem" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-luoxem" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>'
     </script>
+    <script type="text/javascript">
+    function checkloai(id) {
+        var loai = "";
+        var str1 = document.getElementById("laptop").className;
+        var str2 = document.getElementById("smartphone").className;
+        var str3 = document.getElementById("tablet").className;
+        var str4 = document.getElementById("car").className;
+        if (str1 == "active") { loai = "Laptop"; } else if (str2 == "active") { loai = "Smartphone"; } else if (str3 == "active") { loai = "Tablet"; } else if (str4 == "active") { loai = "Car"; }
+
+        var total = Produces.length;
+        var temp = [];
+
+        if (id == "gia1") {
+            for (var i = 0; i < total; i++) {
+                var gia = 0;
+                var x = Produces[i].gia.split('.');
+
+                for (var j = 0; j < x.length; j++) {
+                    gia = (gia + parseInt(x[j])) * 1000;
+                }
+                gia = gia / 1000;
+                if (loai != "") {
+                    if (gia < 10000000 && Produces[i].loai == loai) {
+                        temp.push({ vt: i, gia: gia });
+                        gia = 0;
+                    }
+                } else {
+                    if (gia < 10000000) {
+                        temp.push({ vt: i, gia: gia });
+                        gia = 0;
+                    }
+                }
+            }
+        }
+        if (id == "gia2") {
+            for (var i = 0; i < total; i++) {
+                var gia = 0;
+                var x = Produces[i].gia.split('.');
+
+                for (var j = 0; j < x.length; j++) {
+                    gia = (gia + parseInt(x[j])) * 1000;
+                }
+                gia = gia / 1000;
+                if (loai != "") {
+                    if (gia > 10000000 && gia < 30000000 && Produces[i].loai == loai) {
+                        temp.push({ vt: i, gia: gia });
+                        gia = 0;
+                    }
+                } else {
+                    if (gia > 10000000 && gia < 30000000) {
+                        temp.push({ vt: i, gia: gia });
+                        gia = 0;
+                    }
+
+                }
+            }
+        }
+        if (id == "gia3") {
+            for (var i = 0; i < total; i++) {
+                var gia = 0;
+                var x = Produces[i].gia.split('.');
+
+                for (var j = 0; j < x.length; j++) {
+                    gia = (gia + parseInt(x[j])) * 1000;
+                }
+                gia = gia / 1000;
+                if (loai != "") {
+                    if (gia > 30000000 && Produces[i].loai == loai) {
+                        temp.push({ vt: i, gia: gia });
+                        gia = 0;
+                    }
+                } else {
+                    if (gia > 30000000) {
+                        temp.push({ vt: i, gia: gia });
+                        gia = 0;
+                    }
+
+                }
+            }
+        }
+        for (var i = 0; i < temp.length; i++) {
+            for (var j = i + 1; j < temp.length; j++) {
+                if (temp[j].gia < temp[i].gia) {
+                    var t = temp[i];
+                    temp[i] = temp[j];
+                    temp[j] = t;
+                }
+            }
+        }
+        var str = $("#" + id).html();
+        var xeptheogiatien = '<div class="col-md-6" style="float: none; color: #469df4"><h3>' + str + "/" + loai + '</h3></div>';
+        var t = 1;
+        for (var i = 0; i < temp.length; i++) {
+            var produce = Produces[temp[i].vt];
+            var image = "image/" + produce.hinh;
+            if (i % 15 == 0 && i != 0) {
+                xeptheogiatien += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#giasp" aria-label="Previous" aria-controls="giasp" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab">1</a></li> <li><a href="#giasp1" aria-controls="giasp1" role="tab" data-toggle="tab">2</a></li> <li><a href="#giasp2" aria-controls="giasp2" role="tab" data-toggle="tab">3</a></li><li> <a href="#giasp2" aria-label="Next" aria-controls="giasp2" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+                if (t == 1) {
+                    $("#giasp").html(xeptheogiatien);
+                } else if (t == 2) {
+                    $("#giasp1").html(xeptheogiatien);
+                }
+                xeptheogiatien = '<div class="col-md-4" style="float: none; color: #469df4"><h3>' + str + "/" + loai + '</h3></div>';
+                t++;
+            }
+            xeptheogiatien += '<div class="itembox"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 200px"><div style="text-align: center;">' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + ' đ' + '</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div>';
+        }
+        var dem = temp.length;
+        while (dem % 5 != 0) {
+            dem++;
+            xeptheogiatien += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+        }
+        xeptheogiatien += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#giasp" aria-label="Previous" aria-controls="giasp" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab">1</a></li> <li><a href="#giasp1" aria-controls="giasp1" role="tab" data-toggle="tab">2</a></li> <li><a href="#giasp2" aria-controls="giasp2" role="tab" data-toggle="tab">3</a></li><li> <a href="#giasp2" aria-label="Next" aria-controls="giasp2" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+        if (t == 3) {
+            $("#giasp2").html(xeptheogiatien);
+        } else if (t == 2) {
+            $("#giasp1").html(xeptheogiatien);
+            $("#giasp2").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+        } else {
+            $("#giasp").html(xeptheogiatien);
+            $("#giasp1").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+            $("#giasp2").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+        }
+    }
+
+    function loai(id){
+        var total = Produces.length;
+        var temp = [];
+        if (id == "alaptop")
+        {
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].loai == "Laptop"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "asmartphone"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].loai == "Smartphone"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "atablet"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].loai == "Tablet"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "acar"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].loai == "Car"){
+                    temp.push(i);
+                }
+            } 
+        }
+        var xemtheoloai = '<div class="col-md-4" style="float: none; color: #469df4"><h3>' + id.slice(1) + '</h3></div>';
+        var t = 1;
+        for (var i = 0; i < temp.length; i++) {
+            var produce = Produces[temp[i]];
+            var image = "image/" + produce.hinh;
+            if (i % 15 == 0 && i != 0) {
+                xemtheoloai += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#loaisp" aria-label="Previous" aria-controls="loaisp" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#loaisp" aria-controls="loaisp" role="tab" data-toggle="tab">1</a></li> <li><a href="#loaisp1" aria-controls="loaisp1" role="tab" data-toggle="tab">2</a></li> <li><a href="#loaisp2" aria-controls="loaisp" role="tab" data-toggle="tab">3</a></li><li> <a href="#loaisp2" aria-label="Next" aria-controls="loaisp2" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+                if (t == 1) {
+                    $("#loaisp").html(xemtheoloai);
+                } else if (t == 2) {
+                    $("#loaisp1").html(xemtheoloai);
+                }
+                xemtheoloai = '<div class="col-md-4" style="float: none; color: #469df4"><h3>' + id.slice(1) + '</h3></div>';
+                xemtheoloai = '';
+                t++;
+            }
+            xemtheoloai += '<div class="itembox"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 200px"><div style="text-align: center;">' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + ' đ' + '</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div>';
+        }
+        var dem = temp.length;
+        while (dem % 5 != 0) {
+            dem++;
+            xemtheoloai += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+        }
+        xemtheoloai += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#loaisp" aria-label="Previous" aria-controls="loaisp" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#loaisp" aria-controls="loaisp" role="tab" data-toggle="tab">1</a></li> <li><a href="#loaisp1" aria-controls="loaisp1" role="tab" data-toggle="tab">2</a></li> <li><a href="#loaisp2" aria-controls="loaisp2" role="tab" data-toggle="tab">3</a></li><li> <a href="#loaisp2" aria-label="Next" aria-controls="loaisp2" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+        if (t == 3) {
+            $("#loaisp2").html(xemtheoloai);
+        } else if (t == 2) {
+            $("#loaisp1").html(xemtheoloai);
+            $("#loaisp2").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#loaisp" aria-controls="loaisp" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+        } else {
+            $("#loaisp").html(xemtheoloai);
+            $("#loaisp1").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#loaisp" aria-controls="loaisp" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+            $("#loaisp2").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#loaisp" aria-controls="loaisp" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+        }
+    }
+
+    function nhasanxuat(id){
+        var total = Produces.length;
+        var temp = [];
+        if (id == "adell")
+        {
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "Dell"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "aasus"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "Asus"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "ahp"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "HP"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "asamsung"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "Samsung"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "aapple"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "Apple"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "axiaomi"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "Xiaomi"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "atoyota"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "Toyota"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "ahyundai"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "Hyundai"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "amercedes-benz"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "mercedes-benz"){
+                    temp.push(i);
+                }
+            } 
+        }
+        else if (id == "ahonda"){
+            for (var i = 0; i < Produces.length; i++) {
+                if(Produces[i].nhasanxuat == "Honda"){
+                    temp.push(i);
+                }
+            } 
+        }
+        var xemtheonhasanxuat = '<div class="col-md-4" style="float: none; color: #469df4"><h3>' + id.slice(1) + '</h3></div>';
+        var t = 1;
+        for (var i = 0; i < temp.length; i++) {
+            var produce = Produces[temp[i]];
+            var image = "image/" + produce.hinh;
+            if (i % 15 == 0 && i != 0) {
+                xemtheonhasanxuat += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#nhasanxuat" aria-label="Previous" aria-controls="nhasanxuat" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab">1</a></li> <li><a href="#nhasanxuat1" aria-controls="nhasanxuat1" role="tab" data-toggle="tab">2</a></li> <li><a href="#nhasanxuat2" aria-controls="nhasanxuat" role="tab" data-toggle="tab">3</a></li><li> <a href="#nhasanxuat2" aria-label="Next" aria-controls="nhasanxuat2" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+                if (t == 1) {
+                    $("#nhasanxuat").html(xemtheonhasanxuat);
+                } else if (t == 2) {
+                    $("#nhasanxuat1").html(xemtheonhasanxuat);
+                }
+                xemtheonhasanxuat = '<div class="col-md-4" style="float: none; color: #469df4"><h3>' + id.slice(1) + '</h3></div>';
+                xemtheonhasanxuat = '';
+                t++;
+            }
+            xemtheonhasanxuat += '<div class="itembox"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 200px"><div style="text-align: center;">' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + ' đ' + '</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div>';
+        }
+        var dem = temp.length;
+        while (dem % 5 != 0) {
+            dem++;
+            xemtheonhasanxuat += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+        }
+        xemtheonhasanxuat += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#nhasanxuat" aria-label="Previous" aria-controls="nhasanxuat" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab">1</a></li> <li><a href="#nhasanxuat1" aria-controls="nhasanxuat1" role="tab" data-toggle="tab">2</a></li> <li><a href="#nhasanxuat2" aria-controls="nhasanxuat2" role="tab" data-toggle="tab">3</a></li><li> <a href="#nhasanxuat2" aria-label="Next" aria-controls="nhasanxuat2" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+        if (t == 3) {
+            $("#nhasanxuat2").html(xemtheonhasanxuat);
+        } else if (t == 2) {
+            $("#nhasanxuat1").html(xemtheonhasanxuat);
+            $("#nhasanxuat2").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+        } else {
+            $("#nhasanxuat").html(xemtheonhasanxuat);
+            $("#nhasanxuat1").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+            $("#nhasanxuat2").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+        }
+    }
+
+    function xuatxu() {
+        var total = Produces.length;
+        var temp = [];
+        var xx1 = 0;
+        var xx2 = 0;
+        var xx3 = 0;
+        var xx4 = 0;
+        var xx5 = 0;
+        for (var i = 0; i < Produces.length; i++) {
+            if(Produces[i].xuatxu == "USA") {
+                temp.push(i);
+            }
+        }
+        xx1 = temp.length;
+        for (var i = 0; i < Produces.length; i++) {
+            if(Produces[i].xuatxu == "Hàn Quốc") {
+                temp.push(i);
+            }
+        }
+        xx2 = temp.length;
+        for (var i = 0; i < Produces.length; i++) {
+            if(Produces[i].xuatxu == "Đài Loan") {
+                temp.push(i);
+            }
+        }
+        xx3 = temp.length;
+        for (var i = 0; i < Produces.length; i++) {
+            if(Produces[i].xuatxu == "Trung Quốc") {
+                temp.push(i);
+            }
+        }
+        xx4 = temp.length;
+        for (var i = 0; i < Produces.length; i++) {
+            if(Produces[i].xuatxu == "Nhật Bản") {
+                temp.push(i);
+            }
+        }
+        xx5 = temp.length;
+        for (var i = 0; i < Produces.length; i++) {
+            if(Produces[i].xuatxu == "Đức") {
+                temp.push(i);
+            }
+        }
+        var xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>USA</h3></div>';
+        var t = 1;
+        for (var i = 0; i < temp.length; i++) {
+            var produce = Produces[temp[i]];
+            var image = "image/" + produce.hinh;
+            if (i == xx1) {
+                var dem = i;
+                while (dem % 5 != 0) {
+                    dem++;
+                    xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+                }
+                xemtheoxuatxu += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#xuatxu" aria-label="Previous" aria-controls="xuatxu" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#xuatxu" aria-controls="xuatxu" role="tab" data-toggle="tab">1</a></li> <li><a href="#xuatxu1" aria-controls="xuatxu1" role="tab" data-toggle="tab">2</a></li> <li><a href="#xuatxu2" aria-controls="xuatxu2" role="tab" data-toggle="tab">3</a></li><li><a href="#xuatxu3" aria-controls="xuatxu3" role="tab" data-toggle="tab">4</a></li><li><a href="#xuatxu4" aria-controls="xuatxu4" role="tab" data-toggle="tab">5</a></li><li><a href="#xuatxu5" aria-controls="xuatxu5" role="tab" data-toggle="tab">6</a></li><li> <a href="#xuatxu5" aria-label="Next" aria-controls="xuatxu5" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+                $("#xuatxu").html(xemtheoxuatxu);
+                xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>Hàn Quốc</h3></div>';
+            }
+            if (i == xx2) {
+                var dem = xx2-xx1;
+                while (dem % 5 != 0) {
+                    dem++;
+                    xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+                }
+                xemtheoxuatxu += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#xuatxu" aria-label="Previous" aria-controls="xuatxu" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#xuatxu" aria-controls="xuatxu" role="tab" data-toggle="tab">1</a></li> <li><a href="#xuatxu1" aria-controls="xuatxu1" role="tab" data-toggle="tab">2</a></li> <li><a href="#xuatxu2" aria-controls="xuatxu2" role="tab" data-toggle="tab">3</a></li><li><a href="#xuatxu3" aria-controls="xuatxu3" role="tab" data-toggle="tab">4</a></li><li><a href="#xuatxu4" aria-controls="xuatxu4" role="tab" data-toggle="tab">5</a></li><li><a href="#xuatxu5" aria-controls="xuatxu5" role="tab" data-toggle="tab">6</a></li><li> <a href="#xuatxu5" aria-label="Next" aria-controls="xuatxu5" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+                $("#xuatxu1").html(xemtheoxuatxu);
+                xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>Đài Loan</h3></div>';
+            }
+            if (i == xx3) {
+                var dem = xx3-xx2;
+                while (dem % 5 != 0) {
+                    dem++;
+                    xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+                }
+                xemtheoxuatxu += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#xuatxu" aria-label="Previous" aria-controls="xuatxu" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#xuatxu" aria-controls="xuatxu" role="tab" data-toggle="tab">1</a></li> <li><a href="#xuatxu1" aria-controls="xuatxu1" role="tab" data-toggle="tab">2</a></li> <li><a href="#xuatxu2" aria-controls="xuatxu2" role="tab" data-toggle="tab">3</a></li><li><a href="#xuatxu3" aria-controls="xuatxu3" role="tab" data-toggle="tab">4</a></li><li><a href="#xuatxu4" aria-controls="xuatxu4" role="tab" data-toggle="tab">5</a></li><li><a href="#xuatxu5" aria-controls="xuatxu5" role="tab" data-toggle="tab">6</a></li><li> <a href="#xuatxu5" aria-label="Next" aria-controls="xuatxu5" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+                $("#xuatxu2").html(xemtheoxuatxu);
+                xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>Trung Quốc</h3></div>';
+            }
+            if (i == xx4) {
+                var dem = xx4-xx3;
+                while (dem % 5 != 0) {
+                    dem++;
+                    xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+                }
+                xemtheoxuatxu += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#xuatxu" aria-label="Previous" aria-controls="xuatxu" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#xuatxu" aria-controls="xuatxu" role="tab" data-toggle="tab">1</a></li> <li><a href="#xuatxu1" aria-controls="xuatxu1" role="tab" data-toggle="tab">2</a></li> <li><a href="#xuatxu2" aria-controls="xuatxu2" role="tab" data-toggle="tab">3</a></li><li><a href="#xuatxu3" aria-controls="xuatxu3" role="tab" data-toggle="tab">4</a></li><li><a href="#xuatxu4" aria-controls="xuatxu4" role="tab" data-toggle="tab">5</a></li><li><a href="#xuatxu5" aria-controls="xuatxu5" role="tab" data-toggle="tab">6</a></li><li> <a href="#xuatxu5" aria-label="Next" aria-controls="xuatxu5" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+                $("#xuatxu3").html(xemtheoxuatxu);
+                xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>Nhật Bản</h3></div>';
+            }
+            if (i == xx5) {
+                var dem = xx5-xx4;
+                while (dem % 5 != 0) {
+                    dem++;
+                    xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+                }
+                xemtheoxuatxu += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#xuatxu" aria-label="Previous" aria-controls="xuatxu" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#xuatxu" aria-controls="xuatxu" role="tab" data-toggle="tab">1</a></li> <li><a href="#xuatxu1" aria-controls="xuatxu1" role="tab" data-toggle="tab">2</a></li> <li><a href="#xuatxu2" aria-controls="xuatxu2" role="tab" data-toggle="tab">3</a></li><li><a href="#xuatxu3" aria-controls="xuatxu3" role="tab" data-toggle="tab">4</a></li><li><a href="#xuatxu4" aria-controls="xuatxu4" role="tab" data-toggle="tab">5</a></li><li><a href="#xuatxu5" aria-controls="xuatxu5" role="tab" data-toggle="tab">6</a></li><li> <a href="#xuatxu5" aria-label="Next" aria-controls="xuatxu5" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+                $("#xuatxu4").html(xemtheoxuatxu);
+                xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>Đức</h3></div>';
+            }
+            xemtheoxuatxu += '<div class="itembox"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 200px"><div style="text-align: center;">' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + ' đ' + '</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div>';
+        }
+        var dem = temp.length - xx5;
+        while (dem % 5 != 0) {
+            dem++;
+            xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+        }
+        xemtheoxuatxu += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#xuatxu" aria-label="Previous" aria-controls="xuatxu" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#xuatxu" aria-controls="xuatxu" role="tab" data-toggle="tab">1</a></li> <li><a href="#xuatxu1" aria-controls="xuatxu1" role="tab" data-toggle="tab">2</a></li> <li><a href="#xuatxu2" aria-controls="xuatxu2" role="tab" data-toggle="tab">3</a></li><li><a href="#xuatxu3" aria-controls="xuatxu3" role="tab" data-toggle="tab">4</a></li><li><a href="#xuatxu4" aria-controls="xuatxu4" role="tab" data-toggle="tab">5</a></li><li><a href="#xuatxu5" aria-controls="xuatxu5" role="tab" data-toggle="tab">6</a></li><li> <a href="#xuatxu5" aria-label="Next" aria-controls="xuatxu5" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+        $("#xuatxu5").html(xemtheoxuatxu);
+    }
+
+    function resetactive() {
+        document.getElementById("laptop").className = "";
+        document.getElementById("smartphone").className = "";
+        document.getElementById("tablet").className = "";
+        document.getElementById("car").className = "";
+        document.getElementById("gialoai1").className = "";
+        document.getElementById("gialoai2").className = "";
+        document.getElementById("gialoai3").className = "";
+        document.getElementById("lihome").className = "";
+        document.getElementById("lixuatxu").className = "";
+        document.getElementById("limoinhat").className = "";
+        document.getElementById("dell").className = "";
+        document.getElementById("asus").className = "";
+        document.getElementById("hp").className = "";
+        document.getElementById("samsung").className = "";
+        document.getElementById("apple").className = "";
+        document.getElementById("xiaomi").className = "";
+        document.getElementById("toyota").className = "";
+        document.getElementById("hyundai").className = "";
+        document.getElementById("mercedes-benz").className = "";
+        document.getElementById("honda").className = "";
+    }
+
+    function reset() {
+        document.getElementById("gialoai1").className = "";
+        document.getElementById("gialoai2").className = "";
+        document.getElementById("gialoai3").className = "";
+        document.getElementById("lihome").className = "";
+        document.getElementById("lixuatxu").className = "";
+        document.getElementById("limoinhat").className = "";
+        document.getElementById("libannhieunhat").className = "";
+    }
+    function check() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == "member") {
+            if (password == "123")
+            {
+                $("#taikhoan").html('<li><a href="./member.html" style="color: white"><span class="glyphicon glyphicon-user" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Thông tin tài khoản</span></span></a></li>');
+                $('#over').remove();
+            }
+        }
+    }
+
+    function add(id) {
+        alert(id);
+    }
+
+    function search(){
+        var str = document.getElementById("tensp").value;
+        var total = Produces.length;
+        var temp = [];
+        for (var i = 0; i < Produces.length; i++) {
+            if (Produces[i].ten.search(str)!=-1) {
+                temp.push(i);
+            }
+        }
+        var xemtheoten = '<div class="col-md-4" style="float: none; color: #469df4"><h3>"' + str + '"</h3></div>';
+        var t = 1;
+        for (var i = 0; i < temp.length; i++) {
+            var produce = Produces[temp[i]];
+            var image = "image/" + produce.hinh;
+            if (i % 15 == 0 && i != 0) {
+                xemtheoten += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#timkiem" aria-label="Previous" aria-controls="timkiem" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#timkiem" aria-controls="timkiem" role="tab" data-toggle="tab">1</a></li> <li><a href="#timkiem1" aria-controls="timkiem1" role="tab" data-toggle="tab">2</a></li> <li><a href="#timkiem2" aria-controls="timkiem" role="tab" data-toggle="tab">3</a></li><li> <a href="#timkiem2" aria-label="Next" aria-controls="timkiem2" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+                if (t == 1) {
+                    $("#timkiem").html(xemtheoten);
+                } else if (t == 2) {
+                    $("#timkiem1").html(xemtheoten);
+                }
+                xemtheoten = '<div class="col-md-4" style="float: none; color: #469df4"><h3>"'+str+'"</h3></div>';
+                xemtheoten = '';
+                t++;
+            }
+            xemtheoten += '<div class="itembox"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 200px"><div style="text-align: center;">' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + ' đ' + '</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-success" onclick="add(this.id)">Thêm vào giỏ hàng</button></div>';
+        }
+        var dem = temp.length;
+        while (dem % 5 != 0) {
+            dem++;
+            xemtheoten += '<div class="itembox" style="background-color: #f0f0f0"></div>';
+        }
+        xemtheoten += '<div style="float: none; text-align: center"><nav aria-label="Page navigation"> <ul class="pagination"> <li> <a href="#timkiem" aria-label="Previous" aria-controls="timkiem" role="tab" data-toggle="tab"> <span aria-hidden="true">&laquo;</span> </a> </li> <li><a href="#timkiem" aria-controls="timkiem" role="tab" data-toggle="tab">1</a></li> <li><a href="#timkiem1" aria-controls="timkiem1" role="tab" data-toggle="tab">2</a></li> <li><a href="#timkiem2" aria-controls="timkiem2" role="tab" data-toggle="tab">3</a></li><li> <a href="#timkiem2" aria-label="Next" aria-controls="timkiem2" role="tab" data-toggle="tab"> <span aria-hidden="true">&raquo;</span> </a> </li> </ul> </nav></div>';
+        if (t == 3) {
+            $("#timkiem2").html(xemtheoten);
+        } else if (t == 2) {
+            $("#timkiem1").html(xemtheoten);
+            $("#timkiem2").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#timkiem" aria-controls="timkiem" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+        } else {
+            $("#timkiem").html(xemtheoten);
+            $("#timkiem1").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#timkiem" aria-controls="timkiem" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+            $("#timkiem2").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#timkiem" aria-controls="timkiem" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
+        }
+    }
+    </script>
     <style type="text/css">
+    .itembox {
+        float: left;
+        margin: 8px 8px;
+        text-align: center;
+        width: 205px;
+        height: 300px;
+        background-color: white;
+    }
+
+    .pagination>.active>a,
+    .pagination>.active>span,
+    .pagination>.active>a:hover,
+    .pagination>.active>span:hover,
+    .pagination>.active>a:focus,
+    .pagination>.active>span:focus {
+        z-index: 3;
+        color: #23527c;
+        cursor: default;
+        background-color: white;
+        border-color: #ddd;
+    }
+
     @media all {
 
         .carousel-inner>.item.next,
@@ -303,26 +797,26 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 col-md-8 col-xs-12">
                 <form class="navbar-form navbar-left col-md-3 col-xs-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nhập tên sản phẩm mong muốn...">
+                        <input id="tensp" type="text" class="form-control" placeholder="Nhập tên sản phẩm mong muốn...">
                     </div>
-                    <button type="submit" class="btn btn-default" onclick="">Tìm kiếm</button>
+                    <button href="#timkiem" aria-controls="timkiem" role="tab" data-toggle="tab" type="submit" class="btn btn-default" onclick="search()">Tìm kiếm</button>
                 </form>
                 <ul class="nav navbar-nav col-md-4 col-xs-6">
                     <li><a href="#" style="color: white"><span class="glyphicon glyphicon-bell" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Thông báo của bạn</span></span></a></li>
                     <li><a href="#" style="color: white"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Giỏ hàng</span></span></a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right col-md-2">
+                <ul id="taikhoan" class="nav navbar-nav navbar-right col-md-2">
                     <li>
                         <a class="login-window" href="#login-box" style="color: white">Đăng nhập</a>
                         <div class="login" id="login-box" style="top: 300%; left: -0%">Đăng nhập
                             <form class="login-content" action="#" method="post">
                                 <label class="username">
                                     <span>Tên tài khoản</span>
-                                    <input id="username" type="text" autocomplete="on" name="username" placeholder="Tên tài khoản" value="" />
+                                    <input id="username" type="text" autocomplete="on" name="username" placeholder="Tên tài khoản" value="member" />
                                 </label>
                                 <label class="password">
                                     <span>Mật khẩu</span>
-                                    <input id="password" type="password" name="password" placeholder="Mật khẩu" value="" />
+                                    <input id="password" type="password" name="password" placeholder="Mật khẩu" value="123" />
                                 </label>
                                 <button class="button submit-button" type="button" onclick="check()">Đăng nhập</button>
                                 <br>
@@ -364,49 +858,70 @@
             <ul class="nav nav-tabs" role="tablist">
                 <div class='col-md-12' style='float: none; color: #469df4'>
                     <h3>Loại sản phẩm</h3></div>
-                <li id="lilaptop" role="presentation" style="float: none; margin-left: 10px"><a id="laptop" href="#laptop" aria-controls="laptop" role="tab" data-toggle="tab">Laptop</a></li>
-                <li id="lismartphone" role="presentation" style="float: none; margin-left: 10px"><a id="smartphone" href="#smartphone" aria-controls="smartphone" role="tab" data-toggle="tab">Smart Phone</a></li>
-                <li id="litablet" role="presentation" style="float: none; margin-left: 10px"><a id="tablet" href="#tablet" aria-controls="tablet" role="tab" data-toggle="tab">Tablet</a></li>
-                <li id="licar" role="presentation" style="float: none; margin-left: 10px"><a id="car" href="#car" aria-controls="car" role="tab" data-toggle="tab">Car</a></li>
+                <li id="laptop" role="presentation" style="float: none; margin-left: 10px"><a id="alaptop" href="#loaisp" aria-controls="loaisp" role="tab" data-toggle="tab" onclick="loai(this.id);reset()">Laptop</a></li>
+                <li id="smartphone" role="presentation" style="float: none; margin-left: 10px"><a id="asmartphone" href="#loaisp" aria-controls="loaisp" role="tab" data-toggle="tab" onclick="loai(this.id); reset()">Smart Phone</a></li>
+                <li id="tablet" role="presentation" style="float: none; margin-left: 10px"><a id="atablet" href="#loaisp" aria-controls="loaisp" role="tab" data-toggle="tab" onclick="loai(this.id); reset()">Tablet</a></li>
+                <li id="car" role="presentation" style="float: none; margin-left: 10px"><a id="acar" href="#loaisp" aria-controls="loaisp" role="tab" data-toggle="tab" onclick="loai(this.id); reset()">Car</a></li>
+            </ul>
+            <ul class="nav nav-tabs" role="tablist">
+                <div class='col-md-12' style='float: none; color: #469df4'>
+                    <h3>Nhà sản xuất</h3></div>
+                <li id="dell" role="presentation" style="float: none; margin-left: 10px"><a id="adell" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id);reset()">Dell</a></li>
+                <li id="asus" role="presentation" style="float: none; margin-left: 10px"><a id="aasus" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Asus</a></li>
+                <li id="hp" role="presentation" style="float: none; margin-left: 10px"><a id="ahp" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">HP</a></li>
+                <li id="samsung" role="presentation" style="float: none; margin-left: 10px"><a id="asamsung" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Samsung</a></li>
+                <li id="apple" role="presentation" style="float: none; margin-left: 10px"><a id="aapple" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Apple</a></li>
+                <li id="xiaomi" role="presentation" style="float: none; margin-left: 10px"><a id="axiaomi" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Xiaomi</a></li>
+                <li id="toyota" role="presentation" style="float: none; margin-left: 10px"><a id="atoyota" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Toyota</a></li>
+                <li id="hyundai" role="presentation" style="float: none; margin-left: 10px"><a id="ahyundai" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Hyundai</a></li>
+                <li id="mercedes-benz" role="presentation" style="float: none; margin-left: 10px"><a id="amercedes-benz" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Mercedes-Benz</a></li>
+                <li id="honda" role="presentation" style="float: none; margin-left: 10px"><a id="ahonda" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Honda</a></li>
             </ul>
         </div>
         <div class="col-md-10">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li id="lihome" role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" onclick="checkloai(this.id); resetactive()">Home</a></li>
                 <li>
-                <div class="btn-group">
-                     <button type="button" class="btn btn-default dropdown-toggle" style="background-color: #f0f0f0; border-color: #f0f0f0; color: #3D7AB7; margin-top: 4px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Giá sản phẩm <span class="caret"></span>
-                    </button>
-                    <ul class = "dropdown-menu" style="background-color: #3D7AB7;">
-                        <li role="presentation"><a href="#gia1" aria-controls="gia1" role="tab" data-toggle="tab" onclick="checkloai()">0 đ - 10.000.000 đ</a></li>
-                    </ul>
-                </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" style="background-color: #f0f0f0; border-color: #f0f0f0; color: #3D7AB7; margin-top: 4px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Giá sản phẩm <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li id="gialoai1"role="presentation"><a id="gia1" href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab" onclick="checkloai(this.id); resetactive()">0 đ - 10.000.000 đ</a></li>
+                            <li id="gialoai2" role="presentation"><a id="gia2" href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab" onclick="checkloai(this.id); resetactive()">10000000 đ - 30.000.000 đ</a></li>
+                            <li id="gialoai3" role="presentation"><a id="gia3" href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab" onclick="checkloai(this.id); resetactive()">Trên 30.000.000 đ</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li role="presentation"><a href="#xuatxu" aria-controls="xuatxu" role="tab" data-toggle="tab" onclick="resetloai()">Xuất xứ</a></li>
-                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" onclick="resetloai()">Settings</a></li>
+                <li id="lixuatxu" role="presentation"><a href="#xuatxu" aria-controls="xuatxu" role="tab" data-toggle="tab" onclick="xuatxu(); resetactive()">Xuất xứ</a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">
-                </div>
-                <div role="tabpanel" class="tab-pane" id="gia1">
-                </div>
+                <div role="tabpanel" class="tab-pane active" id="home"></div>
+                    
+                <div role="tabpanel" class="tab-pane" id="timkiem"></div>
+                <div role="tabpanel" class="tab-pane" id="timkiem1"></div>
+                <div role="tabpanel" class="tab-pane" id="timkiem2"></div>
+                    
+                <div role="tabpanel" class="tab-pane" id="giasp"></div>
+                <div role="tabpanel" class="tab-pane" id="giasp1"></div>
+                <div role="tabpanel" class="tab-pane" id="giasp2"></div>
+
                 <div role="tabpanel" class="tab-pane" id="xuatxu"></div>
-                <div role="tabpanel" class="tab-pane" id="settings">...</div>
-                <div role="tabpanel" class="tab-pane" id="laptop">
-                    111111111111
-                </div>
-                <div role="tabpanel" class="tab-pane" id="smartphone">
-                    222222222222
-                </div>
-                <div role="tabpanel" class="tab-pane" id="tablet">
-                    333333333333
-                </div>
-                <div role="tabpanel" class="tab-pane" id="car">
-                    444444444444
-                </div>
+                <div role="tabpanel" class="tab-pane" id="xuatxu1"></div>
+                <div role="tabpanel" class="tab-pane" id="xuatxu2"></div>
+                <div role="tabpanel" class="tab-pane" id="xuatxu3"></div>
+                <div role="tabpanel" class="tab-pane" id="xuatxu4"></div>
+                <div role="tabpanel" class="tab-pane" id="xuatxu5"></div>
+
+                <div role="tabpanel" class="tab-pane" id="loaisp"></div>
+                <div role="tabpanel" class="tab-pane" id="loaisp1"></div>
+                <div role="tabpanel" class="tab-pane" id="loaisp2"></div>
+                
+                <div role="tabpanel" class="tab-pane" id="nhasanxuat"></div>
+                <div role="tabpanel" class="tab-pane" id="nhasanxuat1"></div>
+                <div role="tabpanel" class="tab-pane" id="nhasanxuat2"></div>
             </div>
         </div>
     </div>
@@ -418,9 +933,8 @@
     </script>
     <script type="">
         $('.carousel[data-type="multi"] .item').each(function(){ var next = $(this).next(); if (!next.length) { next = $(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); for (var i=0;i
-        <3;i++) { next=next.next(); if (!next.length) { next=$ (this).siblings( ':first'); } next.children( ':first-child').clone().appendTo($(this)); } }); 
-    </script>
-    <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <3;i++) { next=next.next(); if (!next.length) { next=$ (this).siblings( ':first'); } next.children( ':first-child').clone().appendTo($(this)); } }); </script>
+            <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
