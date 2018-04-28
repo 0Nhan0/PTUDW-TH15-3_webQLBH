@@ -18,7 +18,10 @@
     };
     </script>
     <script type="text/javascript">
+    var Giohang = [];
     var Produces = [];
+    var Damua= [];
+    var dangnhap = 0;
     Produces.push({ id: 0, ten: "Inspiron 7577 – N7577A", hinh: "0.jpg", gia: "27.190.000", soluong: 100, soluotxem: 675, soluotban: 22, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "03/30/2018" })
 
     Produces.push({ id: 1, ten: " Dell Vostro V3568 XF6C61", hinh: "1.jpg", gia: "11.849.000", soluong: 100, soluotxem: 1266, soluotban: 74, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "12/26/2017" })
@@ -27,53 +30,53 @@
 
     Produces.push({ id: 3, ten: "Dell XPS13 9360 70148070 ", hinh: "3.jpg", gia: "3.2899.000", soluong: 100, soluotxem: 325, soluotban: 26, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "04/20/2018" })
 
-    Produces.push({ id: 5, ten: "Dell Vostro 3468 70145235", hinh: "4.jpg", gia: "9.799.000", soluong: 100, soluotxem: 1025, soluotban: 85, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/14/2018" })
+    Produces.push({ id: 4, ten: "Dell Vostro 3468 70145235", hinh: "4.jpg", gia: "9.799.000", soluong: 100, soluotxem: 1025, soluotban: 85, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/14/2018" })
 
-    Produces.push({ id: 6, ten: "Dell Latitude 7389 70144353", hinh: "5.jpg", gia: "33.909.000", soluong: 100, soluotxem: 574, soluotban: 25, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/15/2018" })
+    Produces.push({ id: 5, ten: "Dell Latitude 7389 70144353", hinh: "5.jpg", gia: "33.909.000", soluong: 100, soluotxem: 574, soluotban: 25, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "Dell", ngaynhan: "02/15/2018" })
 
-    Produces.push({ id: 7, ten: "Asus FX503VD-E4082T", hinh: "6.jpg", gia: "18.699.000", soluong: 100, soluotxem: 345, soluotban: 18, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/15/2018" })
+    Produces.push({ id: 6, ten: "Asus FX503VD-E4082T", hinh: "6.jpg", gia: "18.699.000", soluong: 100, soluotxem: 345, soluotban: 18, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/15/2018" })
 
-    Produces.push({ id: 8, ten: "Asus ZenBook UX430UA-GV261T", hinh: "7.jpg", gia: "19.459.000", soluong: 100, soluotxem: 214, soluotban: 8, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/20/2018" })
+    Produces.push({ id: 7, ten: "Asus ZenBook UX430UA-GV261T", hinh: "7.jpg", gia: "19.459.000", soluong: 100, soluotxem: 214, soluotban: 8, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "02/20/2018" })
 
-    Produces.push({ id: 9, ten: "Asus X441UA-WX027T", hinh: "8.jpg", gia: "9.149.000", soluong: 100, soluotxem: 685, soluotban: 56, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "03/26/2018" })
+    Produces.push({ id: 8, ten: "Asus X441UA-WX027T", hinh: "8.jpg", gia: "9.149.000", soluong: 100, soluotxem: 685, soluotban: 56, mota: "123", xuatxu: "Đài Loan", loai: "Laptop", nhasanxuat: "Asus", ngaynhan: "03/26/2018" })
 
-    Produces.push({ id: 10, ten: "HP Pavillon 14-AL114TU Z6X73PA", hinh: "9.jpg", gia: "9.699.000", soluong: 100, soluotxem: 546, soluotban: 102, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "03/21/2018" })
+    Produces.push({ id: 9, ten: "HP Pavillon 14-AL114TU Z6X73PA", hinh: "9.jpg", gia: "9.699.000", soluong: 100, soluotxem: 546, soluotban: 102, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "03/21/2018" })
 
-    Produces.push({ id: 11, ten: "HP Probook 450 G5 2XR60PA", hinh: "10.jpg", gia: "16.099.000", soluong: 100, soluotxem: 214, soluotban: 28, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "12/26/2017" })
+    Produces.push({ id: 10, ten: "HP Probook 450 G5 2XR60PA", hinh: "10.jpg", gia: "16.099.000", soluong: 100, soluotxem: 214, soluotban: 28, mota: "123", xuatxu: "USA", loai: "Laptop", nhasanxuat: "HP", ngaynhan: "12/26/2017" })
 
-    Produces.push({ id: 12, ten: "Samsung Galaxy Tab E T561", hinh: "11.jpg", gia: "3.949.000", soluong: 100, soluotxem: 342, soluotban: 85, mota: "123", xuatxu: "Hàn Quốc", loai: "Tablet", nhasanxuat: "Samsung", ngaynhan: "11/20/2017" })
+    Produces.push({ id: 11, ten: "Samsung Galaxy Tab E T561", hinh: "11.jpg", gia: "3.949.000", soluong: 100, soluotxem: 342, soluotban: 85, mota: "123", xuatxu: "Hàn Quốc", loai: "Tablet", nhasanxuat: "Samsung", ngaynhan: "11/20/2017" })
 
-    Produces.push({ id: 13, ten: "Samsung Galaxy J7 Pro", hinh: "12.jpg", gia: "5.590.000", soluong: 100, soluotxem: 2654, soluotban: 542, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/02/2018" })
+    Produces.push({ id: 12, ten: "Samsung Galaxy J7 Pro", hinh: "12.jpg", gia: "5.590.000", soluong: 100, soluotxem: 2654, soluotban: 542, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/02/2018" })
 
-    Produces.push({ id: 14, ten: "Samsung Galaxy A8 Plus", hinh: "13.jpg", gia: "12.990.000", soluong: 100, soluotxem: 1752, soluotban: 156, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/03/2018" })
+    Produces.push({ id: 13, ten: "Samsung Galaxy A8 Plus", hinh: "13.jpg", gia: "12.990.000", soluong: 100, soluotxem: 1752, soluotban: 156, mota: "123", xuatxu: "Hàn Quốc", loai: "Smartphone", nhasanxuat: "Samsung", ngaynhan: "04/03/2018" })
 
-    Produces.push({ id: 15, ten: "iPhone 6 32GB", hinh: "14.jpg", gia: "6.890.000", soluong: 100, soluotxem: 5621, soluotban: 632, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "03/08/2018" })
+    Produces.push({ id: 14, ten: "iPhone 6 32GB", hinh: "14.jpg", gia: "6.890.000", soluong: 100, soluotxem: 5621, soluotban: 632, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "03/08/2018" })
 
-    Produces.push({ id: 16, ten: "iPad WiFi 32GB", hinh: "15.jpg", gia: "8.490.000", soluong: 100, soluotxem: 663, soluotban: 75, mota: "123", xuatxu: "USA", loai: "Tablet", nhasanxuat: "Apple", ngaynhan: "04/08/2018" })
+    Produces.push({ id: 15, ten: "iPad WiFi 32GB", hinh: "15.jpg", gia: "8.490.000", soluong: 100, soluotxem: 663, soluotban: 75, mota: "123", xuatxu: "USA", loai: "Tablet", nhasanxuat: "Apple", ngaynhan: "04/08/2018" })
 
-    Produces.push({ id: 17, ten: "iPhone 8 Plus 64GB", hinh: "16.jpg", gia: "20.300.000", soluong: 100, soluotxem: 1285, soluotban: 265, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "04/09/2018" })
+    Produces.push({ id: 16, ten: "iPhone 8 Plus 64GB", hinh: "16.jpg", gia: "20.300.000", soluong: 100, soluotxem: 1285, soluotban: 265, mota: "123", xuatxu: "USA", loai: "Smartphone", nhasanxuat: "Apple", ngaynhan: "04/09/2018" })
 
-    Produces.push({ id: 18, ten: "Asus Zenfone Max Plus M1 ZB570TL", hinh: "17.jpg", gia: "4.690.000", soluong: 100, soluotxem: 231, soluotban: 34, mota: "123", xuatxu: "Đài Loan", loai: "Smartphone", nhasanxuat: "Asus", ngaynhan: "04/12/2018" })
+    Produces.push({ id: 17, ten: "Asus Zenfone Max Plus M1 ZB570TL", hinh: "17.jpg", gia: "4.690.000", soluong: 100, soluotxem: 231, soluotban: 34, mota: "123", xuatxu: "Đài Loan", loai: "Smartphone", nhasanxuat: "Asus", ngaynhan: "04/12/2018" })
 
-    Produces.push({ id: 19, ten: "Xiaomi Mi Mix 2", hinh: "18.jpg", gia: "9.990.000", soluong: 100, soluotxem: 2351, soluotban: 356, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "12/09/2017" })
+    Produces.push({ id: 18, ten: "Xiaomi Mi Mix 2", hinh: "18.jpg", gia: "9.990.000", soluong: 100, soluotxem: 2351, soluotban: 356, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "12/09/2017" })
 
-    Produces.push({ id: 20, ten: "Xiaomi Redmi 5 Plus", hinh: "19.jpg", gia: "3.650.000", soluong: 100, soluotxem: 1687, soluotban: 265, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "03/11/2018" })
+    Produces.push({ id: 19, ten: "Xiaomi Redmi 5 Plus", hinh: "19.jpg", gia: "3.650.000", soluong: 100, soluotxem: 1687, soluotban: 265, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "03/11/2018" })
 
-    Produces.push({ id: 21, ten: "Xiaomi Redmi Note 5 Pro", hinh: "20.jpg", gia: "5.350.000", soluong: 100, soluotxem: 2164, soluotban: 421, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "01/01/2018" })
+    Produces.push({ id: 20, ten: "Xiaomi Redmi Note 5 Pro", hinh: "20.jpg", gia: "5.350.000", soluong: 100, soluotxem: 2164, soluotban: 421, mota: "123", xuatxu: "Trung Quốc", loai: "Smartphone", nhasanxuat: "Xiaomi", ngaynhan: "01/01/2018" })
 
-    Produces.push({ id: 22, ten: "TOYOTA VIOS 1.5E MT", hinh: "21.jpg", gia: "499.000.000", soluong: 100, soluotxem: 321, soluotban: 12, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "01/17/2018" })
+    Produces.push({ id: 21, ten: "TOYOTA VIOS 1.5E MT", hinh: "21.jpg", gia: "499.000.000", soluong: 100, soluotxem: 321, soluotban: 12, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "01/17/2018" })
 
-    Produces.push({ id: 23, ten: "TOYOTA INNOVA 2.0G", hinh: "22.jpg", gia: "816.000.000", soluong: 100, soluotxem: 687, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "03/22/2018" })
+    Produces.push({ id: 22, ten: "TOYOTA INNOVA 2.0G", hinh: "22.jpg", gia: "816.000.000", soluong: 100, soluotxem: 687, soluotban: 62, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "03/22/2018" })
 
-    Produces.push({ id: 24, ten: "TOYOTA FORTUNER 2.7V 4X2", hinh: "23.jpg", gia: "1.079.000.000", soluong: 100, soluotxem: 1231, soluotban: 231, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
+    Produces.push({ id: 23, ten: "TOYOTA FORTUNER 2.7V 4X2", hinh: "23.jpg", gia: "1.079.000.000", soluong: 100, soluotxem: 1231, soluotban: 231, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
 
-    Produces.push({ id: 25, ten: "TOYOTA COROLLA ALTIS 1.8E MT", hinh: "24.jpg", gia: "678.000.000", soluong: 100, soluotxem: 623, soluotban: 103, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
+    Produces.push({ id: 24, ten: "TOYOTA COROLLA ALTIS 1.8E MT", hinh: "24.jpg", gia: "678.000.000", soluong: 100, soluotxem: 623, soluotban: 103, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/13/2018" })
 
-    Produces.push({ id: 26, ten: "TOYOTA VIOS 1.5G TRD", hinh: "25.jpg", gia: "566.000.000", soluong: 100, soluotxem: 237, soluotban: 38, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/22/2018" })
+    Produces.push({ id: 25, ten: "TOYOTA VIOS 1.5G TRD", hinh: "25.jpg", gia: "566.000.000", soluong: 100, soluotxem: 237, soluotban: 38, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/22/2018" })
 
-    Produces.push({ id: 27, ten: "TOYOTA CAMRY 2.0E", hinh: "26.jpg", gia: "967.000.000", soluong: 100, soluotxem: 1022, soluotban: 421, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/24/2018" })
+    Produces.push({ id: 26, ten: "TOYOTA CAMRY 2.0E", hinh: "26.jpg", gia: "967.000.000", soluong: 100, soluotxem: 1022, soluotban: 421, mota: "123", xuatxu: "Nhật Bản", loai: "Car", nhasanxuat: "Toyota", ngaynhan: "04/24/2018" })
 
-    Produces.push({ ten: "HYUNDAI ACCENT 1.4 AT", hinh: "27.jpg", gia: "540.000.000", soluong: 100, soluotxem: 848, soluotban: 112, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "04/12/2018" })
+    Produces.push({ id: 27, ten: "HYUNDAI ACCENT 1.4 AT", hinh: "27.jpg", gia: "540.000.000", soluong: 100, soluotxem: 848, soluotban: 112, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "04/12/2018" })
 
     Produces.push({ id: 28, ten: "HYUNDAI GRAND I10 1.2 AT", hinh: "28.jpg", gia: "402.000.000", soluong: 100, soluotxem: 562, soluotban: 89, mota: "123", xuatxu: "Hàn Quốc", loai: "Car", nhasanxuat: "Hyundai", ngaynhan: "03/29/2018" })
 
@@ -351,37 +354,33 @@
         }
     }
 
-    function loai(id){
+    function loai(id) {
         var total = Produces.length;
         var temp = [];
-        if (id == "alaptop")
-        {
+        if (id == "alaptop") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].loai == "Laptop"){
+                if (Produces[i].loai == "Laptop") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "asmartphone"){
+            }
+        } else if (id == "asmartphone") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].loai == "Smartphone"){
+                if (Produces[i].loai == "Smartphone") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "atablet"){
+            }
+        } else if (id == "atablet") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].loai == "Tablet"){
+                if (Produces[i].loai == "Tablet") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "acar"){
+            }
+        } else if (id == "acar") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].loai == "Car"){
+                if (Produces[i].loai == "Car") {
                     temp.push(i);
                 }
-            } 
+            }
         }
         var xemtheoloai = '<div class="col-md-4" style="float: none; color: #469df4"><h3>' + id.slice(1) + '</h3></div>';
         var t = 1;
@@ -419,79 +418,69 @@
         }
     }
 
-    function nhasanxuat(id){
+    function nhasanxuat(id) {
         var total = Produces.length;
         var temp = [];
-        if (id == "adell")
-        {
+        if (id == "adell") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "Dell"){
+                if (Produces[i].nhasanxuat == "Dell") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "aasus"){
+            }
+        } else if (id == "aasus") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "Asus"){
+                if (Produces[i].nhasanxuat == "Asus") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "ahp"){
+            }
+        } else if (id == "ahp") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "HP"){
+                if (Produces[i].nhasanxuat == "HP") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "asamsung"){
+            }
+        } else if (id == "asamsung") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "Samsung"){
+                if (Produces[i].nhasanxuat == "Samsung") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "aapple"){
+            }
+        } else if (id == "aapple") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "Apple"){
+                if (Produces[i].nhasanxuat == "Apple") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "axiaomi"){
+            }
+        } else if (id == "axiaomi") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "Xiaomi"){
+                if (Produces[i].nhasanxuat == "Xiaomi") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "atoyota"){
+            }
+        } else if (id == "atoyota") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "Toyota"){
+                if (Produces[i].nhasanxuat == "Toyota") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "ahyundai"){
+            }
+        } else if (id == "ahyundai") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "Hyundai"){
+                if (Produces[i].nhasanxuat == "Hyundai") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "amercedes-benz"){
+            }
+        } else if (id == "amercedes-benz") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "mercedes-benz"){
+                if (Produces[i].nhasanxuat == "mercedes-benz") {
                     temp.push(i);
                 }
-            } 
-        }
-        else if (id == "ahonda"){
+            }
+        } else if (id == "ahonda") {
             for (var i = 0; i < Produces.length; i++) {
-                if(Produces[i].nhasanxuat == "Honda"){
+                if (Produces[i].nhasanxuat == "Honda") {
                     temp.push(i);
                 }
-            } 
+            }
         }
         var xemtheonhasanxuat = '<div class="col-md-4" style="float: none; color: #469df4"><h3>' + id.slice(1) + '</h3></div>';
         var t = 1;
@@ -538,37 +527,37 @@
         var xx4 = 0;
         var xx5 = 0;
         for (var i = 0; i < Produces.length; i++) {
-            if(Produces[i].xuatxu == "USA") {
+            if (Produces[i].xuatxu == "USA") {
                 temp.push(i);
             }
         }
         xx1 = temp.length;
         for (var i = 0; i < Produces.length; i++) {
-            if(Produces[i].xuatxu == "Hàn Quốc") {
+            if (Produces[i].xuatxu == "Hàn Quốc") {
                 temp.push(i);
             }
         }
         xx2 = temp.length;
         for (var i = 0; i < Produces.length; i++) {
-            if(Produces[i].xuatxu == "Đài Loan") {
+            if (Produces[i].xuatxu == "Đài Loan") {
                 temp.push(i);
             }
         }
         xx3 = temp.length;
         for (var i = 0; i < Produces.length; i++) {
-            if(Produces[i].xuatxu == "Trung Quốc") {
+            if (Produces[i].xuatxu == "Trung Quốc") {
                 temp.push(i);
             }
         }
         xx4 = temp.length;
         for (var i = 0; i < Produces.length; i++) {
-            if(Produces[i].xuatxu == "Nhật Bản") {
+            if (Produces[i].xuatxu == "Nhật Bản") {
                 temp.push(i);
             }
         }
         xx5 = temp.length;
         for (var i = 0; i < Produces.length; i++) {
-            if(Produces[i].xuatxu == "Đức") {
+            if (Produces[i].xuatxu == "Đức") {
                 temp.push(i);
             }
         }
@@ -588,7 +577,7 @@
                 xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>Hàn Quốc</h3></div>';
             }
             if (i == xx2) {
-                var dem = xx2-xx1;
+                var dem = xx2 - xx1;
                 while (dem % 5 != 0) {
                     dem++;
                     xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
@@ -598,7 +587,7 @@
                 xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>Đài Loan</h3></div>';
             }
             if (i == xx3) {
-                var dem = xx3-xx2;
+                var dem = xx3 - xx2;
                 while (dem % 5 != 0) {
                     dem++;
                     xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
@@ -608,7 +597,7 @@
                 xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>Trung Quốc</h3></div>';
             }
             if (i == xx4) {
-                var dem = xx4-xx3;
+                var dem = xx4 - xx3;
                 while (dem % 5 != 0) {
                     dem++;
                     xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
@@ -618,7 +607,7 @@
                 xemtheoxuatxu = '<div class="col-md-4" style="float: none; color: #469df4"><h3>Nhật Bản</h3></div>';
             }
             if (i == xx5) {
-                var dem = xx5-xx4;
+                var dem = xx5 - xx4;
                 while (dem % 5 != 0) {
                     dem++;
                     xemtheoxuatxu += '<div class="itembox" style="background-color: #f0f0f0"></div>';
@@ -639,6 +628,7 @@
     }
 
     function resetactive() {
+
         document.getElementById("laptop").className = "";
         document.getElementById("smartphone").className = "";
         document.getElementById("tablet").className = "";
@@ -648,7 +638,9 @@
         document.getElementById("gialoai3").className = "";
         document.getElementById("lihome").className = "";
         document.getElementById("lixuatxu").className = "";
-        document.getElementById("limoinhat").className = "";
+        document.getElementById("ligiohang").className = "";
+        document.getElementById("lilichsudh").className = "";
+
         document.getElementById("dell").className = "";
         document.getElementById("asus").className = "";
         document.getElementById("hp").className = "";
@@ -667,31 +659,52 @@
         document.getElementById("gialoai3").className = "";
         document.getElementById("lihome").className = "";
         document.getElementById("lixuatxu").className = "";
-        document.getElementById("limoinhat").className = "";
-        document.getElementById("libannhieunhat").className = "";
+        document.getElementById("ligiohang").className = "";
+        document.getElementById("lilichsudh").className = "";
+        document.getElementById("dell").className = "";
+        document.getElementById("asus").className = "";
+        document.getElementById("hp").className = "";
+        document.getElementById("samsung").className = "";
+        document.getElementById("apple").className = "";
+        document.getElementById("xiaomi").className = "";
+        document.getElementById("toyota").className = "";
+        document.getElementById("hyundai").className = "";
+        document.getElementById("mercedes-benz").className = "";
+        document.getElementById("honda").className = "";
     }
+
+    function reset1() {
+        document.getElementById("ligiohang").className = "";
+        document.getElementById("lilichsudh").className = "";
+        document.getElementById("gialoai1").className = "";
+        document.getElementById("gialoai2").className = "";
+        document.getElementById("gialoai3").className = "";
+        document.getElementById("lihome").className = "";
+        document.getElementById("lixuatxu").className = "";
+        document.getElementById("laptop").className = "";
+        document.getElementById("smartphone").className = "";
+        document.getElementById("tablet").className = "";
+        document.getElementById("car").className = "";
+    }
+
     function check() {
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         if (username == "member") {
-            if (password == "123")
-            {
+            if (password == "123") {
+                dangnhap = 1;
                 $("#taikhoan").html('<li><a href="./member.html" style="color: white"><span class="glyphicon glyphicon-user" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Thông tin tài khoản</span></span></a></li>');
                 $('#over').remove();
             }
         }
     }
 
-    function add(id) {
-        alert(id);
-    }
-
-    function search(){
+    function search() {
         var str = document.getElementById("tensp").value;
         var total = Produces.length;
         var temp = [];
         for (var i = 0; i < Produces.length; i++) {
-            if (Produces[i].ten.search(str)!=-1) {
+            if (Produces[i].ten.search(str) != -1) {
                 temp.push(i);
             }
         }
@@ -707,7 +720,7 @@
                 } else if (t == 2) {
                     $("#timkiem1").html(xemtheoten);
                 }
-                xemtheoten = '<div class="col-md-4" style="float: none; color: #469df4"><h3>"'+str+'"</h3></div>';
+                xemtheoten = '<div class="col-md-4" style="float: none; color: #469df4"><h3>"' + str + '"</h3></div>';
                 xemtheoten = '';
                 t++;
             }
@@ -730,6 +743,79 @@
             $("#timkiem2").html('<nav aria-label="Page navigation" style="text-align: center"><a href="#timkiem" aria-controls="timkiem" role="tab" data-toggle="tab"><h4>Return</h4></a></nav>');
         }
     }
+
+    function add(sid) {
+        if (dangnhap == 0) {
+            alert("Vui lòng đăng nhập hoặc đăng kí để mua hàng");
+        }
+        else if(dangnhap == 1){
+           var id = parseInt(sid.slice(2));
+        alert("Đã thêm sản phẩm vào giỏ");
+        Giohang.push(id); 
+        }
+    }
+
+    function ktgiohang() {
+        var thongtingiohang = '<div class="col-md-4" style="float: none; color: #469df4; text-align: left"><h3>Giỏ hàng</h3></div>'
+        if (Giohang.length == 0) {
+            thongtingiohang += '<div style="text-align=center;"><h4>Không có sản phẩm nào trong giỏ<h4></div>'
+            $("#giohang").html(thongtingiohang);
+        } 
+        else {    
+            for (var i = 0; i < Giohang.length; i++) {
+                var produce = Produces[Giohang[i]];
+                var image = "image/" + produce.hinh;
+                thongtingiohang += '<div class="itembox"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 200px"><div style="text-align: center;">' + produce.ten + '</div><div style="text-align: center;">' + produce.gia + ' đ' + '</div></a><button type="button" id="sp' + produce.id + '" class="btn btn-warning" onclick="bodh(this.id); ktgiohang()">Bỏ đơn hàng</button></div>';
+            }
+            var dem = Giohang.length;
+            while (dem % 5 != 0) {
+                dem++;
+                thongtingiohang += '<div class="itembox" style="background-color: #f0f0f0;"></div>';
+            }
+            thongtingiohang += '<button type="button" class="btn btn-danger" onclick="muahang(); ktgiohang()"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Mua hàng</button>'
+            $("#giohang").html(thongtingiohang);
+        }
+    }
+    function bodh(sid){
+        var id = parseInt(sid.slice(2));
+        for (var i = 0; i < Giohang.length; i++){
+            if(Giohang[i] == id){
+                Giohang.splice(i,1);
+            }
+        }
+    }
+    function muahang(){
+        for (var i = 0; i < Giohang.length; i++){
+            Damua.push(Giohang[i]);
+            Produces[Giohang[i]].soluotban++;
+            Produces[Giohang[i]].soluong--;
+        }
+        Giohang.splice(0, Giohang.length)
+        alert("Mua thành công, đã cập nhật lại lượt bán, số lượng còn lại!");
+    }
+
+    function lichsudh(){
+        var lichsudonhang = '<div class="col-md-4" style="float: none; color: #469df4; text-align: left"><h3>Danh sách đơn hàng đã mua</h3></div>'
+        if(Damua.length == 0){
+            lichsudonhang+= '<div style="text-align=center;"><h4>Chưa mua đơn hàng nào<h4></div>'
+            $("#lichsudh").html(lichsudonhang);
+        }
+        else {
+            for (var i = 0; i < Damua.length; i++) {
+                var produce = Produces[Damua[i]];
+                var image = "image/" + produce.hinh;
+                lichsudonhang += '<div class="itembox" style="height: 270px"><a href="./info.html"><img src="' + image + '" style="width: 205px; height: 200px"><div style="text-align: center;">' + produce.ten + ' đ</div><div style="text-align: center;">' + produce.gia + '</div><div style="text-align: center;">Còn lại: ' + produce.soluong + '</div></a></div>';
+            }
+            var dem = Damua.length;
+            while (dem % 5 != 0) {
+                dem++;
+                lichsudonhang += '<div class="itembox" style="background-color: #f0f0f0; height: 270px"></div>';
+            }
+            lichsudonhang += '<button type="button" class="btn btn-danger" onclick="muahang(); ktgiohang()"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Mua hàng</button>'
+            $("#lichsudh").html(lichsudonhang);
+        }
+    }
+
     </script>
     <style type="text/css">
     .itembox {
@@ -791,7 +877,7 @@
         <div class="container-fluid" style="background-color: #469df4">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header col-md-2 col-xs-12">
-                <a class="navbar-brand" style="color: white;text-align: center; display: block;" href="#"><span>Trang chủ</span></a>
+                <a class="navbar-brand" style="color: white;text-align: center; display: block;" href="./index.html"><span>Trang chủ</span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 col-md-8 col-xs-12">
@@ -801,9 +887,10 @@
                     </div>
                     <button href="#timkiem" aria-controls="timkiem" role="tab" data-toggle="tab" type="submit" class="btn btn-default" onclick="search()">Tìm kiếm</button>
                 </form>
-                <ul class="nav navbar-nav col-md-4 col-xs-6">
+                <ul class="nav navbar-nav col-md-5 col-xs-6">
                     <li><a href="#" style="color: white"><span class="glyphicon glyphicon-bell" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Thông báo của bạn</span></span></a></li>
-                    <li><a href="#" style="color: white"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Giỏ hàng</span></span></a></li>
+                    <li id="lilichsudh"><a id="agiohang" href="#lichsudh" aria-controls="lichsudh" role="tab" data-toggle="tab" style="color: white; background-color: #469df4" onclick="lichsudh(); resetactive()"><span class="glyphicon glyphicon-bell" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Lịch sử đơn hàng</span></span></a></li>
+                    <li id="ligiohang"><a id="agiohang" href="#giohang" aria-controls="giohang" role="tab" data-toggle="tab" style="color: white; background-color: #469df4" onclick="ktgiohang(); resetactive()"><span class="glyphicon glyphicon-bell" aria-hidden="true"><span style="font-family: Arial; margin: 0 0; padding: 0 0">Giỏ hàng</span></span></a></li>
                 </ul>
                 <ul id="taikhoan" class="nav navbar-nav navbar-right col-md-2">
                     <li>
@@ -866,29 +953,29 @@
             <ul class="nav nav-tabs" role="tablist">
                 <div class='col-md-12' style='float: none; color: #469df4'>
                     <h3>Nhà sản xuất</h3></div>
-                <li id="dell" role="presentation" style="float: none; margin-left: 10px"><a id="adell" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id);reset()">Dell</a></li>
-                <li id="asus" role="presentation" style="float: none; margin-left: 10px"><a id="aasus" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Asus</a></li>
-                <li id="hp" role="presentation" style="float: none; margin-left: 10px"><a id="ahp" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">HP</a></li>
-                <li id="samsung" role="presentation" style="float: none; margin-left: 10px"><a id="asamsung" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Samsung</a></li>
-                <li id="apple" role="presentation" style="float: none; margin-left: 10px"><a id="aapple" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Apple</a></li>
-                <li id="xiaomi" role="presentation" style="float: none; margin-left: 10px"><a id="axiaomi" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Xiaomi</a></li>
-                <li id="toyota" role="presentation" style="float: none; margin-left: 10px"><a id="atoyota" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Toyota</a></li>
-                <li id="hyundai" role="presentation" style="float: none; margin-left: 10px"><a id="ahyundai" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Hyundai</a></li>
-                <li id="mercedes-benz" role="presentation" style="float: none; margin-left: 10px"><a id="amercedes-benz" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Mercedes-Benz</a></li>
-                <li id="honda" role="presentation" style="float: none; margin-left: 10px"><a id="ahonda" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset()">Honda</a></li>
+                <li id="dell" role="presentation" style="float: none; margin-left: 10px"><a id="adell" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id);reset1()">Dell</a></li>
+                <li id="asus" role="presentation" style="float: none; margin-left: 10px"><a id="aasus" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset1()">Asus</a></li>
+                <li id="hp" role="presentation" style="float: none; margin-left: 10px"><a id="ahp" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset1()">HP</a></li>
+                <li id="samsung" role="presentation" style="float: none; margin-left: 10px"><a id="asamsung" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset1()">Samsung</a></li>
+                <li id="apple" role="presentation" style="float: none; margin-left: 10px"><a id="aapple" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset1()">Apple</a></li>
+                <li id="xiaomi" role="presentation" style="float: none; margin-left: 10px"><a id="axiaomi" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset1()">Xiaomi</a></li>
+                <li id="toyota" role="presentation" style="float: none; margin-left: 10px"><a id="atoyota" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset1()">Toyota</a></li>
+                <li id="hyundai" role="presentation" style="float: none; margin-left: 10px"><a id="ahyundai" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset1()">Hyundai</a></li>
+                <li id="mercedes-benz" role="presentation" style="float: none; margin-left: 10px"><a id="amercedes-benz" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset1()">Mercedes-Benz</a></li>
+                <li id="honda" role="presentation" style="float: none; margin-left: 10px"><a id="ahonda" href="#nhasanxuat" aria-controls="nhasanxuat" role="tab" data-toggle="tab" onclick="nhasanxuat(this.id); reset1()">Honda</a></li>
             </ul>
         </div>
         <div class="col-md-10">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-                <li id="lihome" role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" onclick="checkloai(this.id); resetactive()">Home</a></li>
+                <li id="lihome" role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" onclick="resetactive()">Home</a></li>
                 <li>
                     <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle" style="background-color: #f0f0f0; border-color: #f0f0f0; color: #3D7AB7; margin-top: 4px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Giá sản phẩm <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li id="gialoai1"role="presentation"><a id="gia1" href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab" onclick="checkloai(this.id); resetactive()">0 đ - 10.000.000 đ</a></li>
+                            <li id="gialoai1" role="presentation"><a id="gia1" href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab" onclick="checkloai(this.id); resetactive()">0 đ - 10.000.000 đ</a></li>
                             <li id="gialoai2" role="presentation"><a id="gia2" href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab" onclick="checkloai(this.id); resetactive()">10000000 đ - 30.000.000 đ</a></li>
                             <li id="gialoai3" role="presentation"><a id="gia3" href="#giasp" aria-controls="giasp" role="tab" data-toggle="tab" onclick="checkloai(this.id); resetactive()">Trên 30.000.000 đ</a></li>
                         </ul>
@@ -898,27 +985,24 @@
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="giohang" style="text-align: center;"></div>
+                <div role="tabpanel" class="tab-pane" id="lichsudh" style="text-align: center;">51551</div>
                 <div role="tabpanel" class="tab-pane active" id="home"></div>
-                    
                 <div role="tabpanel" class="tab-pane" id="timkiem"></div>
                 <div role="tabpanel" class="tab-pane" id="timkiem1"></div>
                 <div role="tabpanel" class="tab-pane" id="timkiem2"></div>
-                    
                 <div role="tabpanel" class="tab-pane" id="giasp"></div>
                 <div role="tabpanel" class="tab-pane" id="giasp1"></div>
                 <div role="tabpanel" class="tab-pane" id="giasp2"></div>
-
                 <div role="tabpanel" class="tab-pane" id="xuatxu"></div>
                 <div role="tabpanel" class="tab-pane" id="xuatxu1"></div>
                 <div role="tabpanel" class="tab-pane" id="xuatxu2"></div>
                 <div role="tabpanel" class="tab-pane" id="xuatxu3"></div>
                 <div role="tabpanel" class="tab-pane" id="xuatxu4"></div>
                 <div role="tabpanel" class="tab-pane" id="xuatxu5"></div>
-
                 <div role="tabpanel" class="tab-pane" id="loaisp"></div>
                 <div role="tabpanel" class="tab-pane" id="loaisp1"></div>
                 <div role="tabpanel" class="tab-pane" id="loaisp2"></div>
-                
                 <div role="tabpanel" class="tab-pane" id="nhasanxuat"></div>
                 <div role="tabpanel" class="tab-pane" id="nhasanxuat1"></div>
                 <div role="tabpanel" class="tab-pane" id="nhasanxuat2"></div>
